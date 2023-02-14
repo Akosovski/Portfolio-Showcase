@@ -395,10 +395,11 @@ header .item:hover a::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95px;
+    width: 80px;
     height: 60px;
     margin-right: 20px;
     margin-bottom: 15px;
+    padding-top: 5px;
     font-size: 18px;
     font-weight: 700;
     color: var(--color5);
@@ -406,24 +407,46 @@ header .item:hover a::after{
     border-radius: 5px;
 }
 
+/* Skills Background Color */
 .contact-skills .skills .skill:nth-child(1) {
 
-    background-color: var(--color6);
+    background-color: var(--color1);
 }
-
 .contact-skills .skills .skill:nth-child(2) {
 
-    background-color: var(--color3);
+    background-color: var(--color1);
 }
-
 .contact-skills .skills .skill:nth-child(3) {
 
     background-color: var(--color1);
 }
-
 .contact-skills .skills .skill:nth-child(4) {
 
-    background-color: var(--color7);
+    background-color: var(--color1);
+}
+.contact-skills .skills .skill:nth-child(5) {
+
+    background-color: var(--color1);
+}
+.contact-skills .skills .skill:nth-child(6) {
+
+    background-color: var(--color1);
+}
+.contact-skills .skills .skill:nth-child(7) {
+
+    background-color: var(--color1);
+}
+.contact-skills .skills .skill:nth-child(8) {
+
+    background-color: var(--color1);
+}
+.contact-skills .skills .skill:nth-child(9) {
+
+    background-color: var(--color1);
+}
+.contact-skills .skills .skill:nth-child(10) {
+
+    background-color: var(--color1);
 }
 
 .intro-section .bottom .default-btn{
