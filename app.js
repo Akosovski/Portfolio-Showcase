@@ -1,5 +1,4 @@
 
-// initializing the carousel slider for the educational part
 var swiper = new Swiper(".mySwiperEducation", {
     slidesPerView: "auto",
     slideToScroll: 1,
@@ -20,7 +19,6 @@ var swiper = new Swiper(".mySwiperEducation", {
     },
 });
 
-// initializing the carousel slider for the experience part
 var swiper = new Swiper(".mySwiperExperience", {
     slidesPerView: "auto",
     slideToScroll: 1,
@@ -41,7 +39,6 @@ var swiper = new Swiper(".mySwiperExperience", {
     },
 });
 
-//creating the scrollreveal function for the effects to fade on the scroll
 function revealFunction() {
     window.sr = ScrollReveal({ distance: '100%', easing: 'ease-out', reset: true });
     sr.reveal('.js-reveal-0', { duration: 900 });
@@ -51,42 +48,30 @@ function revealFunction() {
 }
 revealFunction();
 
-//function to open the details of portfolio cases
-
-// 'open' is the details backdrop state (closed)
 var open = false;
 
-//clicking on the "open" card button...
 function handleProjectsCards(btn) {
 
-    //get the details of all cases
     const details = document.querySelectorAll('.portfolio-section .backdrop');
-
-    //switch the state
     open = !open;
 
     if (open) {
 
         details.forEach(element => {
 
-            //search the details of the specific card that was clicked on, based on the attribute
             if (element.classList.contains(btn.getAttribute('data-project-ref'))) {
 
-                //open de details
                 element.classList.add('backdrop-open');
 
                 var content = element.querySelector('.content');
 
                 setTimeout(() => {
 
-                    //adjusts opacity
                     content.classList.add('content-showing');
                 }, 800);
             }
         });
     } else {
-
-        //if it is to close the details, the same thing but now removing the classes
 
         details.forEach(element => {
 
