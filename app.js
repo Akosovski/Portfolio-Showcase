@@ -39,12 +39,19 @@ var swiper = new Swiper(".mySwiperExperience", {
     },
 });
 
+// Reveal Animation
 function revealFunction() {
     window.sr = ScrollReveal({ distance: '100%', easing: 'ease-out', reset: true });
-    sr.reveal('.js-reveal-0', { duration: 900 });
-    sr.reveal('.js-reveal-1', { duration: 1000 });
-    sr.reveal('.js-reveal-2', { duration: 1200 });
-    sr.reveal('.js-reveal-3', { duration: 1400 });
+    sr.reveal('.js-reveal-0', { duration: 500 });
+    sr.reveal('.js-reveal-1', { duration: 600 });
+    sr.reveal('.js-reveal-2', { duration: 700 });
+    sr.reveal('.js-reveal-3', { duration: 800 });
+    sr.reveal('.js-reveal-4', { duration: 900 });
+    sr.reveal('.js-reveal-5', { duration: 1000 });
+    sr.reveal('.js-reveal-6', { duration: 1100 });
+    sr.reveal('.js-reveal-7', { duration: 1200 });
+    sr.reveal('.js-reveal-8', { duration: 1300 });
+    sr.reveal('.js-reveal-9', { duration: 1400 });
 }
 revealFunction();
 
