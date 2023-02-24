@@ -7,12 +7,10 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
+import Modal from './Modal';
 
 // PNG
 import akhta from "../public/akhta-profile.png";
-import code from "../public/code.png";
-import design from "../public/design.png";
-import consulting from "../public/consulting.png";
 
 // SKILLS SVG
 import html5 from "../public/html5.svg";
@@ -38,6 +36,7 @@ import web6 from "../public/web6.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -84,24 +83,18 @@ export default function Home() {
             has prior experience in teaching computer programming, 
             currently advancing on <span class="text-teal-500 font-bold">Node.js</span> and <span class="text-teal-500 font-bold">Django</span>.
             </p>
-
-            {/*} This Section will be moved to footer */}
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer"><AiFillLinkedin className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-              <a href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer"><AiFillInstagram className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-              <a href="https://github.com/Akosovski" target="_blank" rel="noreferrer"><AiFillGithub className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-            </div>
             
           </div>
         </section>
+
         <section>
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Skills & Proficiencies</h3>
             
             <p className="text-md sm:text-lg py-2 leading-loose md:leading-relaxed text-gray-800 dark:text-gray-200 text-justify mb-3">
               Since I first learned programming, Google and Youtube have been my best friends in understanding more
-              deeply about the material I&apos;m studying. As time goes by I understand more about the concepts and 
-              shortcuts in working on a project so that it can be completed more efficiently.
+              deeply about the material I&apos;m studying besides the main college material. As time goes by I understand more about the concepts and 
+              shortcuts while working on a project so that it can be completed more efficiently.
             </p>
 
             <div className="flex flex-row flex-wrap justify-center">
@@ -148,6 +141,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <section className="py-10">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Project Portfolios</h3>
@@ -166,6 +160,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web1}
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -175,6 +170,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web2}
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -184,6 +180,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web3}
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -193,6 +190,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web4}
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -202,6 +200,7 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web5}
+                alt=""
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -211,10 +210,52 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web6}
+                alt=""
               />
             </div>
           </div>
         </section>
+
+        {/*} This Section will be moved to footer */}
+        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+          <a href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer"><AiFillLinkedin className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
+          <a href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer"><AiFillInstagram className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
+          <a href="https://github.com/Akosovski" target="_blank" rel="noreferrer"><AiFillGithub className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
+
+          <div class="wrapper">
+            <div class="icon facebook">
+                <div class="tooltip">
+                  Facebook
+                </div>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </div>
+            <div class="icon twitter">
+                <div class="tooltip">
+                  Twitter
+                </div>
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">
+                  Instagram
+                </div>
+                <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon github">
+                <div class="tooltip">
+                  Github
+                </div>
+                <span><i class="fab fa-github"></i></span>
+            </div>
+            <div class="icon youtube">
+                <div class="tooltip">
+                  YouTube
+                </div>
+                <span><i class="fab fa-youtube"></i></span>
+            </div>
+          </div>
+
+        </div>
       </main>
     </div>
   );
