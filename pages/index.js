@@ -42,8 +42,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  className="px-4 py-2 border-none rounded-md ml-8 cursor-pointer text-xxl text-white bg-teal-500 hover:bg-teal-600 active:bg-teal-800"
+                  href="https://cdn.discordapp.com/attachments/995173807750926346/1078502004369920052/CV_AKHTA_CAESAR.pdf"
                 >
                   Resume
                 </a>
