@@ -22,3 +22,8 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+}
