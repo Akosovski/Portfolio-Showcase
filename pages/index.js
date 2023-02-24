@@ -54,11 +54,11 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl text-teal-600 hover:text-teal-300 active:text-teal-700"
+                  className="transition ease-in-out delay-50 duration-200 cursor-pointer text-2xl text-teal-600 hover:text-teal-300 active:text-teal-700"
                 />
               </li>
               <li>
-                <a className="px-4 py-2 border-none rounded-md ml-8 cursor-pointer text-xxl text-white bg-teal-500 hover:bg-teal-600 hover:drop-shadow-xl active:bg-teal-800"
+                <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer text-xxl text-white bg-teal-500 hover:bg-teal-600 hover:drop-shadow-xl active:bg-teal-800"
                   href="https://cdn.discordapp.com/attachments/995173807750926346/1078502004369920052/CV_AKHTA_CAESAR.pdf">
                   Resume
                 </a>
@@ -66,16 +66,16 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center sm:p-10 py-10">
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl" id="greet-1">
               Hi, my name is
             </h3>
-            <h2 className="text-4xl py-2 text-teal-500 font-medium dark:text-teal-400 md:text-5xl drop-shadow-md">
+            <h2 className="text-4xl py-2 text-teal-500 font-medium dark:text-teal-400 md:text-5xl drop-shadow-md" id="name-title">
               Muhammad Akhta
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl" id="greet-2">
               I&apos;m a <strong className="text-teal-500">Web Developer.</strong>
             </h3>
-            <div className="mx-auto bg-gradient-to-b drop-shadow-lg from-teal-500 rounded-full w-52 h-52 relative overflow-hidden mt-5 mb-5 md:mb-8 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b drop-shadow-lg from-teal-500 rounded-full w-52 h-52 relative overflow-hidden mt-5 mb-5 md:mb-8 md:h-96 md:w-96" id="profile-pic">
               <Image src={akhta} layout="fill" objectFit="cover" alt="profile-pic"/>
             </div>
             <p className="text-md py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto md:text-lg">
@@ -84,10 +84,12 @@ export default function Home() {
             has prior experience in teaching computer programming, 
             currently advancing on <span class="text-teal-500 font-bold">Node.js</span> and <span class="text-teal-500 font-bold">Django</span>.
             </p>
+
+            {/*} This Section will be moved to footer */}
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer"><AiFillLinkedin className="cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-              <a href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer"><AiFillInstagram className="cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-              <a href="https://github.com/Akosovski" target="_blank" rel="noreferrer"><AiFillGithub className="cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
+              <a href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer"><AiFillLinkedin className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
+              <a href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer"><AiFillInstagram className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
+              <a href="https://github.com/Akosovski" target="_blank" rel="noreferrer"><AiFillGithub className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
             </div>
             
           </div>
@@ -96,118 +98,64 @@ export default function Home() {
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Skills & Proficiencies</h3>
             
-            <p className="text-md sm:text-lg py-2 leading-loose md:leading-relaxed text-gray-800 dark:text-gray-200 text-justify">
+            <p className="text-md sm:text-lg py-2 leading-loose md:leading-relaxed text-gray-800 dark:text-gray-200 text-justify mb-3">
               Since I first learned programming, Google and Youtube have been my best friends in understanding more
               deeply about the material I&apos;m studying. As time goes by I understand more about the concepts and 
               shortcuts in working on a project so that it can be completed more efficiently.
             </p>
 
             <div className="flex flex-row flex-wrap justify-center">
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={html5} width={100} height={100} alt="html5-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={css} width={100} height={100} alt="css-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={js} width={100} height={100} alt="js-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={python} width={100} height={100} alt="py-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={react} width={100} height={100} alt="react-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={node} width={100} height={100} alt="node-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={django} width={100} height={100} alt="dj-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={tailwind} width={100} height={100} alt="tailwind-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={bootstrap} width={100} height={100} alt="bootstrap-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={mongodb} width={100} height={100} alt="mongo-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={vscode} width={100} height={100} alt="vscode-icon"/>
               </div>
-              <div class="box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
                 <Image src={figma} width={100} height={100} alt="figma-icon"/>
               </div>
             </div>
 
-            
-
-
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Lorem Ipsum is Lorem Ipsum, Lorem Ipsum
+            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-gray-200 mt-3 text-center">
+              Click or Tap the icon to see the details.
             </p>
-          </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
-              </h3>
-              <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
-              <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div>
           </div>
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Project Portfolios</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+              Lorem ipsum dolor sit amet, consect et nesciunt et justo sed
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            Lorem ipsum dolor sit amet, consect et nesciunt et justo sed
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
