@@ -22,7 +22,6 @@ import react from "../public/react.svg";
 import django from "../public/django.svg";
 import tailwind from "../public/tailwind.svg";
 import mongodb from "../public/mongodb.svg";
-import vscode from "../public/vscode.svg";
 import figma from "../public/figma.svg";
 
 // WEB PNG PORTFOLIOS
@@ -35,7 +34,6 @@ import web6 from "../public/web6.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -76,7 +74,7 @@ export default function Home() {
             <div className="mx-auto bg-gradient-to-b drop-shadow-lg from-teal-500 rounded-full w-52 h-52 relative overflow-hidden mt-5 mb-5 md:mb-8 md:h-96 md:w-96" id="profile-pic">
               <Image src={akhta} layout="fill" objectFit="cover" alt="profile-pic"/>
             </div>
-            <p className="text-md py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto md:text-lg">
+            <p id="intro-desc" className="text-md py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto md:text-lg">
             Bachelor of Computer Science from <strong>BINUS University. </strong>
             Web developer who already worked on several web application projects and 
             has prior experience in teaching computer programming, 
@@ -117,7 +115,7 @@ export default function Home() {
                   <Image src={css} width={100} height={100} alt="css-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-2" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
               
@@ -128,7 +126,7 @@ export default function Home() {
                   <Image src={js} width={100} height={87} alt="js-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-3" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -139,7 +137,7 @@ export default function Home() {
                 <Image src={python} width={100} height={87} alt="py-icon"/>
               </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-4" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -155,7 +153,7 @@ export default function Home() {
                   <Image src={react} width={100} height={100} alt="react-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-5" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -166,7 +164,7 @@ export default function Home() {
                   <Image src={node} width={100} height={96} alt="node-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-6" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -177,7 +175,7 @@ export default function Home() {
                   <Image src={django} width={100} height={97} alt="dj-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-7" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -188,7 +186,7 @@ export default function Home() {
                   <Image src={tailwind} width={100} height={97} alt="tailwind-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-8" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -199,7 +197,7 @@ export default function Home() {
                   <Image src={bootstrap} width={100} height={85} alt="bootstrap-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-9" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
               
@@ -215,7 +213,7 @@ export default function Home() {
                   <Image src={mongodb} width={100} height={100} alt="mongo-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-10" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -226,13 +224,13 @@ export default function Home() {
                   <Image src={figma} width={100} height={100} alt="figma-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-11" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
             </div>
 
-            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-gray-200 mt-3 text-center">
+            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3 text-center">
               Click or tap the icon to see the details.
             </p>
           </div>
@@ -314,46 +312,30 @@ export default function Home() {
           </div>
         </section>
 
-        {/*} This Section will be moved to footer */}
-        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-          <a href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer"><AiFillLinkedin className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-          <a href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer"><AiFillInstagram className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-          <a href="https://github.com/Akosovski" target="_blank" rel="noreferrer"><AiFillGithub className="transition ease-in-out delay-50 duration-200 cursor-pointer text-xxl text-teal-500 drop-shadow-lg hover:text-teal-400 active:text-teal-700"/></a>
-
-          <div class="wrapper">
-            <div class="icon facebook">
+        {/* Social Media Links */}
+        <div className="text-5xl flex justify-center text-gray-600 dark:text-gray-400">
+          <div class="wrapper mb-20">
+            <div class="icon github">
                 <div class="tooltip">
-                  Facebook
+                  GitHub
                 </div>
-                <span><i class="fab fa-facebook-f"></i></span>
-            </div>
-            <div class="icon twitter">
-                <div class="tooltip">
-                  Twitter
-                </div>
-                <span><i class="fab fa-twitter"></i></span>
+                <a href="https://github.com/Akosovski" target="_blank" rel="noreferrer"><span><i class="fab fa-github"><AiFillGithub id="github-icon" className="text-teal-500 hover:text-white"></AiFillGithub></i></span></a>
             </div>
             <div class="icon instagram">
                 <div class="tooltip">
                   Instagram
                 </div>
-                <span><i class="fab fa-instagram"></i></span>
+                <a href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer"><span><i class="fab fa-instagram"><AiFillInstagram id="instagram-icon" className="text-teal-500 hover:text-white"></AiFillInstagram></i></span></a>
             </div>
-            <div class="icon github">
+            <div class="icon linkedin">
                 <div class="tooltip">
-                  Github
+                  Linkedin
                 </div>
-                <span><i class="fab fa-github"></i></span>
-            </div>
-            <div class="icon youtube">
-                <div class="tooltip">
-                  YouTube
-                </div>
-                <span><i class="fab fa-youtube"></i></span>
+                <a href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer"><span><i class="fab fa-github"><AiFillLinkedin id="linkedin-icon" className="text-teal-500 hover:text-white"></AiFillLinkedin></i></span></a>
             </div>
           </div>
-
         </div>
+
       </main>
     </div>
   );
