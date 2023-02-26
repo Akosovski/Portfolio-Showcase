@@ -7,10 +7,10 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
-import Modal from './Modal';
 
 // PNG
 import akhta from "../public/akhta-profile.png";
+import bootstrap from "../public/bootstrap.png";
 
 // SKILLS SVG
 import html5 from "../public/html5.svg";
@@ -21,7 +21,6 @@ import node from "../public/node.svg";
 import react from "../public/react.svg";
 import django from "../public/django.svg";
 import tailwind from "../public/tailwind.svg";
-import bootstrap from "../public/bootstrap.svg";
 import mongodb from "../public/mongodb.svg";
 import vscode from "../public/vscode.svg";
 import figma from "../public/figma.svg";
@@ -97,50 +96,149 @@ export default function Home() {
               shortcuts while working on a project so that it can be completed more efficiently.
             </p>
 
-            <div className="flex flex-row flex-wrap justify-center">
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={html5} width={100} height={100} alt="html5-icon"/>
+            {/* FLEX BOX PROGRAMMING LANGUAGES */}
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
+              
+              {/* HTML5 */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
+                <a href="https://en.wikipedia.org/wiki/HTML" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={html5} width={100} height={100} alt="html5-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={css} width={100} height={100} alt="css-icon"/>
+
+              {/* CSS */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center">CSS</h3>
+                <a href="https://en.wikipedia.org/wiki/CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={css} width={100} height={100} alt="css-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={js} width={100} height={100} alt="js-icon"/>
+              
+              {/* JAVASCRIPT */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Javascript</h3>
+                <a href="https://en.wikipedia.org/wiki/JavaScript" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={js} width={100} height={87} alt="js-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={python} width={100} height={100} alt="py-icon"/>
+
+              {/* PYTHON */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Python</h3>
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <Image src={python} width={100} height={87} alt="py-icon"/>
+              </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={react} width={100} height={100} alt="react-icon"/>
+
+            </div>
+
+            {/* FLEX BOX FRAMEWORK & LIBRARIES */}
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
+              
+              {/* REACT */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center">React JS</h3>
+                <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={react} width={100} height={100} alt="react-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={node} width={100} height={100} alt="node-icon"/>
+
+              {/* NODE */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Node JS</h3>
+                <a href="https://en.wikipedia.org/wiki/Node.js" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={node} width={100} height={96} alt="node-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={django} width={100} height={100} alt="dj-icon"/>
+
+              {/* DJANGO */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Django</h3>
+                <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={django} width={100} height={97} alt="dj-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={tailwind} width={100} height={100} alt="tailwind-icon"/>
+
+              {/* TAILWIND */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Tailwind</h3>
+                <a href="https://en.wikipedia.org/wiki/Tailwind_CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={tailwind} width={100} height={97} alt="tailwind-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={bootstrap} width={100} height={100} alt="bootstrap-icon"/>
+
+              {/* BOOTSTRAP */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Bootstrap</h3>
+                <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={bootstrap} width={100} height={85} alt="bootstrap-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={mongodb} width={100} height={100} alt="mongo-icon"/>
+              
+            </div>
+
+            {/* FLEX BOX DATABASES & TOOLS */}
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
+            
+              {/* MONGODB */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-3">MongoDB</h3>
+                <a href="https://en.wikipedia.org/wiki/MongoDB" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={mongodb} width={100} height={100} alt="mongo-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={vscode} width={100} height={100} alt="vscode-icon"/>
+
+              {/* FIGMA */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Figma</h3>
+                <a href="https://en.wikipedia.org/wiki/Figma_(software)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                  <Image src={figma} width={100} height={100} alt="figma-icon"/>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
               </div>
-              <div class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
-                <Image src={figma} width={100} height={100} alt="figma-icon"/>
-              </div>
+
             </div>
 
             <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-gray-200 mt-3 text-center">
-              Click or Tap the icon to see the details.
+              Click or tap the icon to see the details.
             </p>
           </div>
         </section>
+
+        
 
         <section className="py-10">
           <div>
