@@ -55,7 +55,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer text-xxl text-white bg-teal-500 hover:bg-teal-600 hover:drop-shadow-xl active:bg-teal-800"
-                  href="https://cdn.discordapp.com/attachments/995173807750926346/1078502004369920052/CV_AKHTA_CAESAR.pdf">
+                  href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/069f81aaff82a167820afa9b0b1fdacf.pdf">
                   Resume
                 </a>
               </li>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
             <p id="intro-desc" className="text-md py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto md:text-lg">
             Bachelor of Computer Science from <strong>BINUS University. </strong>
-            Web developer who already worked on several web application projects and 
+            Already worked on several web application projects and 
             has prior experience in teaching computer programming, 
             currently advancing on <span class="text-teal-500 font-bold">Node.js</span> and <span class="text-teal-500 font-bold">Django</span>.
             </p>
@@ -234,9 +234,7 @@ export default function Home() {
               Click or tap the icon to see the details.
             </p>
           </div>
-        </section>
-
-        
+        </section>    
 
         <section className="py-10">
           <div>
@@ -311,30 +309,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Social Media Links */}
-        <div className="text-5xl flex justify-center text-gray-600 dark:text-gray-400">
-          <div class="wrapper mb-20">
-            <div class="icon github">
-                <div class="tooltip">
-                  GitHub
-                </div>
-                <a href="https://github.com/Akosovski" target="_blank" rel="noreferrer"><span><i class="fab fa-github"><AiFillGithub id="github-icon" className="text-teal-500 hover:text-white"></AiFillGithub></i></span></a>
-            </div>
-            <div class="icon instagram">
-                <div class="tooltip">
-                  Instagram
-                </div>
-                <a href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer"><span><i class="fab fa-instagram"><AiFillInstagram id="instagram-icon" className="text-teal-500 hover:text-white"></AiFillInstagram></i></span></a>
-            </div>
-            <div class="icon linkedin">
-                <div class="tooltip">
-                  Linkedin
-                </div>
-                <a href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer"><span><i class="fab fa-github"><AiFillLinkedin id="linkedin-icon" className="text-teal-500 hover:text-white"></AiFillLinkedin></i></span></a>
-            </div>
-          </div>
-        </div>
 
       </main>
     </div>
