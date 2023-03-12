@@ -100,7 +100,7 @@ export default function Home() {
               {/* HTML5 */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
-                <a href="https://en.wikipedia.org/wiki/HTML" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/HTML" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={html5} width={100} height={100} alt="html5-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
@@ -111,7 +111,7 @@ export default function Home() {
               {/* CSS */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center">CSS</h3>
-                <a href="https://en.wikipedia.org/wiki/CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={css} width={100} height={100} alt="css-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
@@ -122,7 +122,7 @@ export default function Home() {
               {/* JAVASCRIPT */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Javascript</h3>
-                <a href="https://en.wikipedia.org/wiki/JavaScript" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/JavaScript" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={js} width={100} height={87} alt="js-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
@@ -133,7 +133,7 @@ export default function Home() {
               {/* PYTHON */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Python</h3>
-                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                 <Image src={python} width={100} height={87} alt="py-icon"/>
               </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
@@ -149,7 +149,7 @@ export default function Home() {
               {/* REACT */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center">React JS</h3>
-                <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={react} width={100} height={100} alt="react-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
@@ -160,7 +160,7 @@ export default function Home() {
               {/* NODE */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Node JS</h3>
-                <a href="https://en.wikipedia.org/wiki/Node.js" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/Node.js" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={node} width={100} height={96} alt="node-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
@@ -171,7 +171,7 @@ export default function Home() {
               {/* DJANGO */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Django</h3>
-                <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={django} width={100} height={97} alt="dj-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
@@ -182,7 +182,7 @@ export default function Home() {
               {/* TAILWIND */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Tailwind</h3>
-                <a href="https://en.wikipedia.org/wiki/Tailwind_CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/Tailwind_CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={tailwind} width={100} height={97} alt="tailwind-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
@@ -193,7 +193,7 @@ export default function Home() {
               {/* BOOTSTRAP */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Bootstrap</h3>
-                <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={bootstrap} width={100} height={85} alt="bootstrap-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
@@ -209,7 +209,7 @@ export default function Home() {
               {/* MONGODB */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">MongoDB</h3>
-                <a href="https://en.wikipedia.org/wiki/MongoDB" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/MongoDB" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={mongodb} width={100} height={100} alt="mongo-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
@@ -220,7 +220,7 @@ export default function Home() {
               {/* FIGMA */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Figma</h3>
-                <a href="https://en.wikipedia.org/wiki/Figma_(software)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50">
+                <a href="https://en.wikipedia.org/wiki/Figma_(software)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
                   <Image src={figma} width={100} height={100} alt="figma-icon"/>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
