@@ -19,6 +19,9 @@ import js from "../public/javascript.svg";
 import python from "../public/python.svg";
 import node from "../public/node.svg";
 import react from "../public/react.svg";
+import sql from "../public/sql.svg";
+import php from "../public/php.svg";
+import laravel from "../public/laravel.svg";
 import django from "../public/django.svg";
 import tailwind from "../public/tailwind.svg";
 import mongodb from "../public/mongodb.svg";
@@ -81,7 +84,7 @@ export default function Home() {
             Bachelor of Computer Science from <strong>BINUS University. </strong>
             Already worked on several web application projects and 
             has prior experience in teaching computer programming, 
-            currently advancing on <span class="text-teal-500 font-bold">Node.js</span> and <span class="text-teal-500 font-bold">Django</span>.
+            currently advancing on <span class="text-teal-500 font-bold">Node.js</span> and <span class="text-teal-500 font-bold">React.js</span>.
             </p>
             
           </div>
@@ -95,7 +98,11 @@ export default function Home() {
             <p className="text-md sm:text-lg py-2 leading-loose md:leading-relaxed text-gray-800 dark:text-gray-200 text-justify mb-3">
               Since I first learned programming, Google and Youtube have been my best friends in understanding more
               deeply about the material I&apos;m studying besides the main college material. As time goes by I understand more about the concepts and 
-              shortcuts while working on a project so that it can be completed more efficiently.
+              shortcuts while working on a project so that it can be completed more efficiently. Here are the visualizations of my skills that I have made.
+            </p>
+
+            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3 text-center">
+              Feel free to hover or click the icon to see further.
             </p>
 
             {/* FLEX BOX PROGRAMMING LANGUAGES */}
@@ -103,12 +110,11 @@ export default function Home() {
               
               {/* HTML5 */}
                 <div className="box-border border-1 m-2 mx-5">
-                  
                   <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
-                    <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">              
-                      <Image src={html5} width={100} height={100} alt="html5-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                      <span className="tooltiptext text-teal-500 dark:text-white font-bold">This is HTML5</span>
-                    </a>
+                  <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">              
+                    <Image src={html5} width={100} height={100} alt="html5-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                    <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★90 I excel in this language</span>
+                  </a>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                     <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
                   </div>
@@ -118,8 +124,9 @@ export default function Home() {
               {/* CSS */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center">CSS</h3>
-                <a href="https://en.wikipedia.org/wiki/CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={css} width={100} height={100} alt="css-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={css} width={100} height={100} alt="css-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★90 I excel in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-2" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -129,20 +136,34 @@ export default function Home() {
               {/* JAVASCRIPT */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Javascript</h3>
-                <a href="https://en.wikipedia.org/wiki/JavaScript" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={js} width={100} height={87} alt="js-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={js} width={100} height={87} alt="js-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-3" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
+              {/* PHP */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
+              </div>
+
               {/* PYTHON */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Python</h3>
-                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                <Image src={python} width={100} height={87} alt="py-icon"/>
-              </a>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={python} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this language</span>
+                </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-4" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
@@ -156,8 +177,9 @@ export default function Home() {
               {/* REACT */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center">React JS</h3>
-                <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={react} width={100} height={100} alt="react-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={react} width={100} height={100} alt="react-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this library</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-5" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -167,8 +189,9 @@ export default function Home() {
               {/* NODE */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Node JS</h3>
-                <a href="https://en.wikipedia.org/wiki/Node.js" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={node} width={100} height={96} alt="node-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={node} width={100} height={96} alt="node-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-6" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -178,19 +201,33 @@ export default function Home() {
               {/* DJANGO */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Django</h3>
-                <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={django} width={100} height={97} alt="dj-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={django} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-7" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
+              {/* LARAVEL */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Laravel</h3>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={laravel} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
+              </div>
+
               {/* TAILWIND */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Tailwind</h3>
-                <a href="https://en.wikipedia.org/wiki/Tailwind_CSS" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={tailwind} width={100} height={97} alt="tailwind-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={tailwind} width={100} height={97} alt="tailwind-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★60 I have intermediate skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-8" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -200,8 +237,9 @@ export default function Home() {
               {/* BOOTSTRAP */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Bootstrap</h3>
-                <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={bootstrap} width={100} height={85} alt="bootstrap-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={bootstrap} width={100} height={85} alt="bootstrap-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-9" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -216,19 +254,33 @@ export default function Home() {
               {/* MONGODB */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">MongoDB</h3>
-                <a href="https://en.wikipedia.org/wiki/MongoDB" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
-                  <Image src={mongodb} width={100} height={100} alt="mongo-icon"/>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={mongodb} width={100} height={100} alt="mongo-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★30 I have beginner skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-10" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
+              {/* SQL */}
+              <div className="box-border border-1 m-2 mx-5">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-3">SQL</h3>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={sql} width={100} height={100} alt="sql-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★65 I have intermediate skill in this language</span>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
+              </div>
+
               {/* FIGMA */}
               <div className="box-border border-1 m-2 mx-5">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Figma</h3>
-                <a href="https://en.wikipedia.org/wiki/Figma_(software)" class="transition ease-in-out delay-50 duration-200 cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4 hover:brightness-50" target="_blank" rel="noreferrer">
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={figma} width={100} height={100} alt="figma-icon"/>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this tool</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-11" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -237,9 +289,6 @@ export default function Home() {
 
             </div>
 
-            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3 text-center">
-              Click or tap the icon to see the details.
-            </p>
           </div>
         </section>    
 
