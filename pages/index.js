@@ -97,12 +97,12 @@ export default function Home() {
             
             <p className="text-md sm:text-lg py-2 leading-loose md:leading-relaxed text-gray-800 dark:text-gray-200 text-justify mb-3">
               Since I first learned programming, Google and Youtube have been my best friends in understanding more
-              deeply about the material I&apos;m studying besides the main college material. As time goes by I understand more about the concepts and 
+              deeply about the material I&apos;m studying besides the main college material. As time goes by, I understand more about the concepts and 
               shortcuts while working on a project so that it can be completed more efficiently. Here are the visualizations of my skills that I have made.
             </p>
 
             <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3 text-center">
-              Feel free to hover or click the icon to see further.
+              Feel free to hover or click the icon to see further details.
             </p>
 
             {/* FLEX BOX PROGRAMMING LANGUAGES */}
@@ -268,7 +268,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">SQL</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={sql} width={100} height={100} alt="sql-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★65 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -296,10 +296,12 @@ export default function Home() {
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Project Portfolios</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Lorem ipsum dolor sit amet, consect et nesciunt et justo sed
+              I already completed some large scale and small scale projects which some of them are for college and my own side projects I made in my free time.
+              Here are the list of projects that I have completed, I also linked them to the codebase in my Github. 
+              Some of them are already deployed, while most of them are currently offline.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Lorem ipsum dolor sit amet, consect et nesciunt et justo sed
+            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3">
+              Feel free to check them out.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
