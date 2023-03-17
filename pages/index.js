@@ -104,10 +104,10 @@ export default function Home() {
             </p>
 
             {/* FLEX BOX PROGRAMMING LANGUAGES */}
-            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-5 md:p-5">
               
               {/* HTML5 */}
-                <div className="box-border border-1 m-2 mx-5">
+                <div className="box-border border-1 m-2 mx-3">
                   <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
                   <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">              
                     <Image src={html5} width={100} height={100} alt="html5-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -120,7 +120,7 @@ export default function Home() {
              
 
               {/* CSS */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center">CSS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={css} width={100} height={100} alt="css-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -132,7 +132,7 @@ export default function Home() {
               </div>
               
               {/* JAVASCRIPT */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Javascript</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={js} width={100} height={87} alt="js-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -144,7 +144,7 @@ export default function Home() {
               </div>
 
               {/* PHP */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -156,7 +156,7 @@ export default function Home() {
               </div>
 
               {/* PYTHON */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Python</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={python} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -173,7 +173,7 @@ export default function Home() {
             <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
               
               {/* REACT */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center">React JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={react} width={100} height={100} alt="react-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -185,7 +185,7 @@ export default function Home() {
               </div>
 
               {/* NODE */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Node JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={node} width={100} height={96} alt="node-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
 
               {/* DJANGO */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Django</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={django} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -209,7 +209,7 @@ export default function Home() {
               </div>
 
               {/* LARAVEL */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Laravel</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={laravel} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -221,7 +221,7 @@ export default function Home() {
               </div>
 
               {/* TAILWIND */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Tailwind</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={tailwind} width={100} height={97} alt="tailwind-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -233,7 +233,7 @@ export default function Home() {
               </div>
 
               {/* BOOTSTRAP */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Bootstrap</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={bootstrap} width={100} height={85} alt="bootstrap-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -250,7 +250,7 @@ export default function Home() {
             <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
             
               {/* MONGODB */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">MongoDB</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={mongodb} width={100} height={100} alt="mongo-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -262,7 +262,7 @@ export default function Home() {
               </div>
 
               {/* SQL */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">SQL</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={sql} width={100} height={100} alt="sql-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
@@ -274,7 +274,7 @@ export default function Home() {
               </div>
 
               {/* FIGMA */}
-              <div className="box-border border-1 m-2 mx-5">
+              <div className="box-border border-1 m-2 mx-3">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Figma</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={figma} width={100} height={100} alt="figma-icon"/>
