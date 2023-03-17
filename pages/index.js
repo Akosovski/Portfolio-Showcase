@@ -80,7 +80,7 @@ export default function Home() {
             <div className="mx-auto bg-gradient-to-b drop-shadow-lg from-teal-500 rounded-full w-52 h-52 relative overflow-hidden mt-5 mb-5 md:mb-8 md:h-96 md:w-96" id="profile-pic">
               <Image src={akhta} layout="fill" objectFit="cover" alt="profile-pic"/>
             </div>
-            <p id="intro-desc" className="text-md py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto md:text-lg">
+            <p id="intro-desc" className="py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto">
             Bachelor of Computer Science from <strong>BINUS University. </strong>
             Already worked on several web application projects and 
             has prior experience in teaching computer programming, 
@@ -95,14 +95,14 @@ export default function Home() {
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Skills & Proficiencies</h3>
             
-            <p className="text-md sm:text-lg py-2 leading-loose md:leading-relaxed text-gray-800 dark:text-gray-200 text-justify mb-3">
+            <p id="skillpros" className="py-2 leading-loose md:leading-relaxed text-gray-800 dark:text-gray-200 text-justify mb-3">
               Since I first learned programming, Google and Youtube have been my best friends in understanding more
               deeply about the material I&apos;m studying besides the main college material. As time goes by, I understand more about the concepts and 
               shortcuts while working on a project so that it can be completed more efficiently. Here are the visualizations of my skills that I have made.
             </p>
 
-            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3 text-center">
-              Feel free to hover or click the icon to see further details.
+            <p id="initiator" className="font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3 text-center">
+              Hover or click the icon to see further details.
             </p>
 
             {/* FLEX BOX PROGRAMMING LANGUAGES */}
@@ -295,13 +295,10 @@ export default function Home() {
         <section className="py-10">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Project Portfolios</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
               I already completed some large scale and small scale projects which some of them are for college and my own side projects I made in my free time.
               Here are the list of projects that I have completed, I also linked them to the codebase in my Github. 
               Some of them are already deployed, while most of them are currently offline.
-            </p>
-            <p className="text-lg font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3">
-              Feel free to check them out.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">

@@ -30,10 +30,7 @@ a {
 #name-title{
   animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
-#greet-1{
-  animation: 1.5s ease-out 0s 1 slideInFromRight;
-}
-#greet-2{
+#greet-1, #greet-2{
   animation: 1.5s ease-out 0s 1 slideInFromRight;
 }
 #profile-pic{
@@ -41,7 +38,21 @@ a {
 }
 #intro-desc{
   animation: 1.5s ease-out 0s 1 slideInFromBottom;
+  font-size: 1.25rem;
 }
+#skillpros, #port-desc, #initiator{
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #intro-desc, #skillpros, #port-desc{
+    font-size: 1.1rem;
+  }
+  #initiator{
+    font-size: 1.2rem;
+  }
+}
+
 
 @keyframes slideInFromLeft {
   0% {
