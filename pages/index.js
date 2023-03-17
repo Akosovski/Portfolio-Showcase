@@ -32,8 +32,6 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -113,7 +111,7 @@ export default function Home() {
                   <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
                   <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">              
                     <Image src={html5} width={100} height={100} alt="html5-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                    <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★90 I excel in this language</span>
+                    <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★80 I have advance skill in this language</span>
                   </a>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                     <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -126,7 +124,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center">CSS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={css} width={100} height={100} alt="css-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★90 I excel in this language</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-2" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -138,7 +136,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Javascript</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={js} width={100} height={87} alt="js-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this language</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★60 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-3" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -150,7 +148,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★60 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -162,7 +160,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Python</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={python} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this language</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-4" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -179,7 +177,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center">React JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={react} width={100} height={100} alt="react-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this library</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★40 I have intermediate skill in this library</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-5" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -191,7 +189,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Node JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={node} width={100} height={96} alt="node-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★35 I have basic skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-6" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -203,7 +201,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Django</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={django} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this framework</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-7" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -227,7 +225,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Tailwind</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={tailwind} width={100} height={97} alt="tailwind-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★60 I have intermediate skill in this framework</span>
+                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★30 I have basic skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-8" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -342,26 +340,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-                alt=""
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-                alt=""
-              />
-            </div>
+            
           </div>
         </section>
 
