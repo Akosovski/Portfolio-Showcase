@@ -44,9 +44,7 @@ export default function Home() {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '1px solid #000',
+    minWidth: 410,
     boxShadow: 24,
     p: 4,
   };
@@ -163,7 +161,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★60 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -192,7 +190,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center">React JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={react} width={100} height={100} alt="react-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★40 I have intermediate skill in this library</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this library</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-5" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -204,7 +202,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Node JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={node} width={100} height={96} alt="node-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★35 I have basic skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-6" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -240,7 +238,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Tailwind</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={tailwind} width={100} height={97} alt="tailwind-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this framework</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-8" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -316,8 +314,8 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Card className="rounded-xl dark:bg-black drop-shadow-xl">
+            <div className="basis-1/3 flex-1">
+              <Card className="rounded-lg dark:bg-black drop-shadow-xl">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
@@ -332,13 +330,17 @@ export default function Home() {
                   <div>
                     <Button onClick={handleOpen} className="dark:text-white font-abel font-bold">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                      <Box sx={modal_style} className="rounded-xl">
+                      <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
                           Project Details
                         </Typography>
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                           This is the details for the project complete description.
                         </Typography>
+                        <Box className="text-center">
+                          <Button href="https://github.com/Akosovski" className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3">View Code</Button>
+                          <Button href="https://github.com/Akosovski" className="mt-3 text-blue-600 font-abel font-bold -mb-3">Production</Button>
+                        </Box>
                       </Box>
                     </Modal>
                   </div>

@@ -123,17 +123,17 @@ a {
 
 /* PROGRESS BAR PYTHON */
 #progress-bar-4{
-  width: 60%;
+  width: 50%;
 }
 
 /* PROGRESS BAR REACT */
 #progress-bar-5{
-  width: 40%;
+  width: 50%;
 }
 
 /* PROGRESS BAR NODE */
 #progress-bar-6{
-  width: 35%;
+  width: 30%;
 }
 
 /* PROGRESS BAR DJANGO */
@@ -143,7 +143,7 @@ a {
 
 /* PROGRESS BAR TAILWIND */
 #progress-bar-8{
-  width: 30%;
+  width: 50%;
 }
 
 /* PROGRESS BAR BOOTSTRAP */
@@ -163,7 +163,7 @@ a {
 
 /* PROGRESS BAR PHP */
 #progress-bar-12{
-  width: 60%;
+  width: 50%;
 }
 
 /* PROGRESS BAR LARAVEL */
