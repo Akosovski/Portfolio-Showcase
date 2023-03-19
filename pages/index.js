@@ -7,6 +7,7 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
+import Modal from "./Modal";
 
 // PNG
 import akhta from "../public/akhta-profile.png";
@@ -35,6 +36,8 @@ import web4 from "../public/web4.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const handleOnClose = () => setShowModal(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -289,7 +292,7 @@ export default function Home() {
 
           </div>
         </section>    
-
+        
         <section className="py-10">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Project Portfolios</h3>
@@ -299,16 +302,10 @@ export default function Home() {
               Some of them are already deployed, while most of them are currently offline.
             </p>
           </div>
+
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-                alt=""
-              />
+              <Modal onClose={handleOnClose} visible={showModal}/>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
