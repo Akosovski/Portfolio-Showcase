@@ -1,13 +1,18 @@
 import Head from "next/head";
-import {
-  AiFillLinkedin,
-  AiFillInstagram,
-  AiFillGithub,
-} from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import * as React from 'react';
 import { useState } from "react";
 import Image from "next/image";
-import Modal from "./Modal";
+
+// Material UIs
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 
 // PNG
 import akhta from "../public/akhta-profile.png";
@@ -28,16 +33,23 @@ import tailwind from "../public/tailwind.svg";
 import mongodb from "../public/mongodb.svg";
 import figma from "../public/figma.svg";
 
-// WEB PNG PORTFOLIOS
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const handleOnClose = () => setShowModal(false);
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const modal_style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '1px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -57,11 +69,11 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="transition ease-in-out delay-50 duration-200 cursor-pointer text-2xl text-teal-600 hover:text-teal-300 active:text-teal-700"
+                  className="transition ease-in-out delay-50 duration-200 cursor-pointer text-2xl text-blue-600 hover:text-blue-300 active:text-blue-700"
                 />
               </li>
               <li>
-                <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer text-xxl text-white bg-teal-500 hover:bg-teal-600 hover:drop-shadow-xl active:bg-teal-800"
+                <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
                   href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/069f81aaff82a167820afa9b0b1fdacf.pdf">
                   Resume
                 </a>
@@ -72,20 +84,20 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl" id="greet-1">
               Hi, my name is
             </h3>
-            <h2 className="text-4xl py-2 text-teal-500 font-medium dark:text-teal-400 md:text-5xl drop-shadow-md" id="name-title">
+            <h2 className="text-4xl py-2 text-blue-500 font-medium dark:text-blue-600 md:text-5xl drop-shadow-md" id="name-title">
               Muhammad Akhta
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl" id="greet-2">
-              I&apos;m a <strong className="text-teal-500">Web Developer.</strong>
+              I&apos;m a <strong className="text-blue-500">Web Developer.</strong>
             </h3>
-            <div className="mx-auto bg-gradient-to-b drop-shadow-lg from-teal-500 rounded-full w-52 h-52 relative overflow-hidden mt-5 mb-5 md:mb-8 md:h-96 md:w-96" id="profile-pic">
+            <div className="mx-auto bg-gradient-to-b drop-shadow-lg from-blue-700 rounded-full w-52 h-52 relative overflow-hidden mt-5 mb-5 md:mb-8 md:h-96 md:w-96" id="profile-pic">
               <Image src={akhta} layout="fill" objectFit="cover" alt="profile-pic"/>
             </div>
             <p id="intro-desc" className="py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto">
             Bachelor of Computer Science from <strong>BINUS University. </strong>
             Already worked on several web application projects and 
             has prior experience in teaching computer programming, 
-            currently advancing on <span class="text-teal-500 font-bold">Node.js</span> and <span class="text-teal-500 font-bold">React.js</span>.
+            currently advancing on <span class="text-blue-600 font-bold">Node.js</span> and <span class="text-blue-600 font-bold">React.js</span>.
             </p>
             
           </div>
@@ -102,7 +114,7 @@ export default function Home() {
               shortcuts while working on a project so that it can be completed more efficiently. Here are the visualizations of my skills that I have made.
             </p>
 
-            <p id="initiator" className="font-bold py-2 leading-8 text-teal-600 dark:text-teal-600 mt-3 text-center">
+            <p id="initiator" className="font-bold py-2 leading-8 text-blue-600 dark:text-blue-600 mt-3 text-center">
               Hover or click the icon to see further details.
             </p>
 
@@ -114,7 +126,7 @@ export default function Home() {
                   <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
                   <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">              
                     <Image src={html5} width={100} height={100} alt="html5-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                    <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★80 I have advance skill in this language</span>
+                    <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★80 I have advance skill in this language</span>
                   </a>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                     <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -127,7 +139,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center">CSS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={css} width={100} height={100} alt="css-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★75 I have advance skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-2" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -139,7 +151,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Javascript</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={js} width={100} height={87} alt="js-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★60 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★60 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-3" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -151,7 +163,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★60 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★60 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -163,7 +175,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Python</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={python} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-4" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -180,7 +192,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center">React JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={react} width={100} height={100} alt="react-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★40 I have intermediate skill in this library</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★40 I have intermediate skill in this library</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-5" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -192,7 +204,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Node JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={node} width={100} height={96} alt="node-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★35 I have basic skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★35 I have basic skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-6" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -204,7 +216,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Django</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={django} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-7" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -216,7 +228,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Laravel</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={laravel} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -228,7 +240,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Tailwind</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={tailwind} width={100} height={97} alt="tailwind-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★30 I have basic skill in this framework</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-8" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -240,7 +252,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Bootstrap</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={bootstrap} width={100} height={85} alt="bootstrap-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★75 I have advance skill in this framework</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★75 I have advance skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-9" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -257,7 +269,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">MongoDB</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={mongodb} width={100} height={100} alt="mongo-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★30 I have beginner skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have beginner skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-10" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -269,7 +281,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">SQL</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={sql} width={100} height={100} alt="sql-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -281,7 +293,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Figma</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={figma} width={100} height={100} alt="figma-icon"/>
-                  <span className="tooltiptext text-white bg-teal-300 dark:text-white font-bold">★50 I have intermediate skill in this tool</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this tool</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-11" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -305,37 +317,42 @@ export default function Home() {
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <Modal onClose={handleOnClose} visible={showModal}/>
+              <Card className="rounded-xl dark:bg-black drop-shadow-xl">
+                <CardMedia component="img" title="web1"
+                  image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-700 font-bold">
+                    Project Name
+                  </Typography>
+                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                    Project Captions
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <div>
+                    <Button onClick={handleOpen} className="dark:text-white font-abel font-bold">Learn More</Button>
+                    <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                      <Box sx={modal_style} className="rounded-xl">
+                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                          Project Details
+                        </Typography>
+                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                          This is the details for the project complete description.
+                        </Typography>
+                      </Box>
+                    </Modal>
+                  </div>
+                </CardActions>
+              </Card>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-                alt=""
-              />
+
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-                alt=""
-              />
+
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-                alt=""
-              />
+
             </div>
             
           </div>
