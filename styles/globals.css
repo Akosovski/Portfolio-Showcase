@@ -45,7 +45,7 @@ a {
 }
 
 #footer-desc{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -57,6 +57,7 @@ a {
   }
   #footer-desc{
     font-size: 1.35rem;
+    margin-top: 1.6rem;
   }
 }
 
@@ -184,7 +185,6 @@ a {
 }
 
 /* ICON TOOLTIP */
-
 .tooltip {
   position: relative;
   transition: all 300ms;
@@ -221,4 +221,23 @@ a {
 
 .tooltip:active{
   visibility: visible;
+}
+
+/* FOOTER ICONS */
+#github-sosmed{
+  transition: all 80ms;
+}
+
+#github-sosmed:hover{
+  filter: brightness(80%);
+}
+
+@media only screen and (max-width: 600px) {
+  .sosmed{
+    width: 75px;
+  }
+  #linkedin-sosmed{
+    margin-top: -5px;
+    width: 85px;
+  }
 }

@@ -18,7 +18,7 @@ import Modal from '@mui/material/Modal';
 import akhta from "../public/akhta-profile.png";
 import bootstrap from "../public/bootstrap.png";
 
-// SKILLS SVG
+// SVG FILES
 import html5 from "../public/html5.svg";
 import css from "../public/css.svg";
 import js from "../public/javascript.svg";
@@ -33,6 +33,10 @@ import tailwind from "../public/tailwind.svg";
 import mongodb from "../public/mongodb.svg";
 import figma from "../public/figma.svg";
 import photoshop from "../public/photoshop.svg";
+import linkedin from "../public/linkedin.svg";
+import gitlab from "../public/gitlab.svg";
+import github from "../public/github.svg";
+import instagram from "../public/instagram.svg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -45,7 +49,7 @@ export default function Home() {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    minWidth: 410,
+    minWidth: 335,
     boxShadow: 24,
     p: 4,
   };
@@ -59,6 +63,7 @@ export default function Home() {
 
         {/* JAVASCRIPT MODULES */}
         <script type="text/javascript" src="/static/script.js" async />
+
       </Head>
       <main className=" bg-white px-5 dark:bg-gray-900 lg:px-40">
         <section className="min-h-screen">
@@ -79,6 +84,8 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+
+          {/* INTRODUCTION */}
           <div className="text-center sm:p-10 py-10">
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl" id="greet-1">
               Hi, my name is
@@ -102,7 +109,7 @@ export default function Home() {
           </div>
         </section>
         
-
+        {/* SKILLS & PROFICIENCIES */}
         <section>
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Skills & Proficiencies</h3>
@@ -316,13 +323,14 @@ export default function Home() {
           </div>
         </section>    
         
+        {/* PROJECT PORTFOLIOS */}
         <section className="py-10">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Project Portfolios</h3>
             <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I already completed some large scale and small scale projects which some of them are for college and my own side projects I made in my free time.
+              I already completed projects which were used for college and my own side projects I made in my free time.
               Here are the list of projects that I have completed, I also linked them to the codebase in my Github. 
-              Some of them are already deployed, while most of them are currently offline.
+              Some of them are already deployed into production, and the rest are currently offline.
             </p>
           </div>
 
@@ -350,7 +358,7 @@ export default function Home() {
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                           This is the details for the project complete description.
                         </Typography>
-                        <Box className="text-center">
+                        <Box className="flex text-center justify-end w-full">
                           <Button href="https://github.com/Akosovski" className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3">View Code</Button>
                           <Button href="https://github.com/Akosovski" className="mt-3 text-blue-600 font-abel font-bold -mb-3">Production</Button>
                         </Box>
@@ -369,20 +377,44 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
 
             </div>
-            
+          </div>
+        </section>
+
+        {/* CERTIFICATIONS */}
+        <section className="py-10">
+          <div>
+            <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Certifications</h3>
+            <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Lorem Ipsum.
+            </p>
           </div>
         </section>
 
       </main>
 
+      {/* FOOTER */}
       <footer className="border-solid border-t border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 text-black">
         <div className="flex justify-center px-4 py-7">
-          <h1 id="footer-desc" className="mt-2 mb-2 lg:leading-normal font-abel dark:text-white">
-            <span className="text-blue-600 font-semibold">Thank You</span> For Your Visit!
+          <h1 id="footer-desc" className="mt-3 lg:leading-normal font-abel dark:text-white">
+            <span className="text-blue-600 font-semibold mr-1">Thank You!</span> for your visit.
           </h1>
         </div>
+        <div className="flex justify-center py-7 -mt-2">
+          <a class="sosmed box-border p-4" id="github-sosmed" href="https://github.com/Akosovski" target="_blank" rel="noreferrer">
+            <Image src={github} width={45} height={45} alt="github-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 dark:brightness-200"/>
+          </a>
+          <a class="sosmed box-border p-4" href="https://gitlab.com/Akosovski" target="_blank" rel="noreferrer">
+            <Image src={gitlab} width={45} height={45} alt="gitlab-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
+          </a>
+          <a class="sosmed box-border p-4 -mt-2" id="linkedin-sosmed" href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer">
+            <Image src={linkedin} width={60} height={60} alt="linkedin-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
+          </a>
+          <a class="sosmed box-border p-4" href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer">
+            <Image src={instagram} width={45} height={45} alt="instagram-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
+          </a>
+        </div>
         <div className="font-abel text-center pt-2 text-gray-800 dark:text-white text-md pb-8 mt-3">
-          <span>© 2023 Akosovski. All rights reserved.</span>
+          © 2023 <span className="font-semibold">Akosovski</span>. All rights reserved.
         </div>
       </footer>
     </div>
