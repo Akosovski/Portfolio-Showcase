@@ -358,7 +358,7 @@ export default function Home() {
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                           This is the details for the project complete description.
                         </Typography>
-                        <Box className="flex text-center justify-end w-full">
+                        <Box className="flex text-center justify-end w-full mt-4">
                           <Button href="https://github.com/Akosovski" className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3">View Code</Button>
                           <Button href="https://github.com/Akosovski" className="mt-3 text-blue-600 font-abel font-bold -mb-3">Production</Button>
                         </Box>
