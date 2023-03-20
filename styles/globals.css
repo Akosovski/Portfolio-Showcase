@@ -44,12 +44,19 @@ a {
   font-size: 1.25rem;
 }
 
+#footer-desc{
+  font-size: 1.5rem;
+}
+
 @media only screen and (max-width: 600px) {
   #intro-desc, #skillpros, #port-desc{
     font-size: 1.1rem;
   }
   #initiator{
     font-size: 1.2rem;
+  }
+  #footer-desc{
+    font-size: 1.35rem;
   }
 }
 

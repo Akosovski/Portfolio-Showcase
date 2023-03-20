@@ -32,6 +32,7 @@ import django from "../public/django.svg";
 import tailwind from "../public/tailwind.svg";
 import mongodb from "../public/mongodb.svg";
 import figma from "../public/figma.svg";
+import photoshop from "../public/photoshop.svg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -298,6 +299,18 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* PHOTOSHOP */}
+              <div className="box-border border-1 m-2 mx-4">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Photoshop</h3>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={photoshop} width={100} height={100} alt="photoshop-icon"/>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this tool</span>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-11" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -361,6 +374,17 @@ export default function Home() {
         </section>
 
       </main>
+
+      <footer className="border-solid border-t border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 text-black">
+        <div className="flex justify-center px-4 py-7">
+          <h1 id="footer-desc" className="mt-2 mb-2 lg:leading-normal font-abel dark:text-white">
+            <span className="text-blue-600 font-semibold">Thank You</span> For Your Visit!
+          </h1>
+        </div>
+        <div className="font-abel text-center pt-2 text-gray-800 dark:text-white text-md pb-8 mt-3">
+          <span>© 2023 Akosovski. All rights reserved.</span>
+        </div>
+      </footer>
     </div>
   );
 }
