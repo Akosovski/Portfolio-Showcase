@@ -298,7 +298,7 @@ export default function Home() {
               <div className="box-border border-1 m-2 mx-4">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Figma</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
-                  <Image src={figma} width={100} height={100} alt="figma-icon"/>
+                  <Image src={figma} width={100} height={100} alt="figma-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this tool</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
@@ -310,7 +310,7 @@ export default function Home() {
               <div className="box-border border-1 m-2 mx-4">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Photoshop</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
-                  <Image src={photoshop} width={100} height={100} alt="photoshop-icon"/>
+                  <Image src={photoshop} width={100} height={100} alt="photoshop-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this tool</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
