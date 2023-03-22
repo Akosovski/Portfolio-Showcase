@@ -16,9 +16,9 @@ import Modal from '@mui/material/Modal';
 
 // PNG
 import akhta from "../public/akhta-profile.png";
-import bootstrap from "../public/bootstrap.png";
 
 // SVG FILES
+import bootstrap from "../public/bootstrap.svg";
 import html5 from "../public/html5.svg";
 import css from "../public/css.svg";
 import js from "../public/javascript.svg";
@@ -37,6 +37,8 @@ import linkedin from "../public/linkedin.svg";
 import gitlab from "../public/gitlab.svg";
 import github from "../public/github.svg";
 import instagram from "../public/instagram.svg";
+import freecodecamp from "../public/freecodecamp.svg";
+import hackerrank from "../public/hackerrank.svg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -349,7 +351,7 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white font-abel font-bold">Learn More</Button>
+                    <Button onClick={handleOpen} className="dark:text-white font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -384,9 +386,32 @@ export default function Home() {
         <section className="py-10">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Certifications</h3>
-            <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200 mb-2">
               Lorem Ipsum.
             </p>
+            <div>
+              <div className="flex flex-col">
+
+                <div className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black mb-5">
+                  <div className="col-span-2 pt-2 pl-2">
+                    <Image src={hackerrank} width={60} height={60} alt="hackerrank-1" className="rounded-lg"/>
+                  </div>
+                  <div className="col-span-2 p-6 text-lg dark:text-white">
+                    <p>HackerRank</p>
+                  </div>
+                </div>
+
+                <div className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black">
+                  <div className="col-span-2 pt-2 pl-2">
+                    <Image src={freecodecamp} width={60} height={60} alt="hackerrank-1" className="rounded-lg"/>
+                  </div>
+                  <div className="col-span-2 p-6 text-lg dark:text-white">
+                    <p>freeCodeCamp</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
           </div>
         </section>
 
