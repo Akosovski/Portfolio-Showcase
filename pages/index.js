@@ -79,7 +79,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
+                <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer sm:text-xl text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
                   href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/069f81aaff82a167820afa9b0b1fdacf.pdf">
                   Resume
                 </a>
@@ -337,12 +337,14 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+
             <div className="basis-1/3 flex-1">
-              <Card className="rounded-lg dark:bg-black drop-shadow-xl">
+              <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
+              transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-700 font-bold">
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold">
                     Project Name
                   </Typography>
                   <Typography variant="body2" className="dark:text-white text-lg font-abel">
@@ -361,8 +363,12 @@ export default function Home() {
                           This is the details for the project complete description.
                         </Typography>
                         <Box className="flex text-center justify-end w-full mt-4">
-                          <Button href="https://github.com/Akosovski" className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3">View Code</Button>
-                          <Button href="https://github.com/Akosovski" className="mt-3 text-blue-600 font-abel font-bold -mb-3">Production</Button>
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">View Code</Button>
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">Production</Button>
                         </Box>
                       </Box>
                     </Modal>
@@ -370,15 +376,46 @@ export default function Home() {
                 </CardActions>
               </Card>
             </div>
-            <div className="basis-1/3 flex-1">
 
-            </div>
             <div className="basis-1/3 flex-1">
-
+              <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
+              transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800">
+                <CardMedia component="img" title="web1"
+                  image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold">
+                    Project Name
+                  </Typography>
+                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                    Project Captions
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <div>
+                    <Button onClick={handleOpen} className="dark:text-white font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                      <Box sx={modal_style} className="rounded-xl bg-white">
+                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                          Project Details
+                        </Typography>
+                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                          This is the details for the project complete description.
+                        </Typography>
+                        <Box className="flex text-center justify-end w-full mt-4">
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">View Code</Button>
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">Production</Button>
+                        </Box>
+                      </Box>
+                    </Modal>
+                  </div>
+                </CardActions>
+              </Card>
             </div>
-            <div className="basis-1/3 flex-1">
 
-            </div>
           </div>
         </section>
 
@@ -390,25 +427,79 @@ export default function Home() {
               Lorem Ipsum.
             </p>
             <div>
-              <div className="flex flex-col">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-y-5 gap-x-5">
 
-                <div className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black mb-5">
-                  <div className="col-span-2 pt-2 pl-2">
-                    <Image src={hackerrank} width={60} height={60} alt="hackerrank-1" className="rounded-lg"/>
+                <a className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black 
+                transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800" 
+                href="https://www.hackerrank.com/certificates/f1b25f4ac1c5" target="_blank" rel="noreferrer">
+                  <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
+                    <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-lg dark:text-white">
-                    <p>HackerRank</p>
+                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                    <p className="mr-3 font-semibold">HackerRank</p>
+                    <p>Javascript (Basic)</p>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black">
-                  <div className="col-span-2 pt-2 pl-2">
-                    <Image src={freecodecamp} width={60} height={60} alt="hackerrank-1" className="rounded-lg"/>
+                <a className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black 
+                transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800" 
+                href="https://www.hackerrank.com/certificates/7848d5a766a8" target="_blank" rel="noreferrer">
+                  <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
+                    <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-lg dark:text-white">
-                    <p>freeCodeCamp</p>
+                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                    <p className="mr-3 font-semibold">HackerRank</p>
+                    <p>Python (Basic)</p>
                   </div>
-                </div>
+                </a>
+
+                <a className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black 
+                transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800" 
+                href="https://www.hackerrank.com/certificates/98e010e56a4a" target="_blank" rel="noreferrer">
+                  <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
+                    <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
+                  </div>
+                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                    <p className="mr-3 font-semibold">HackerRank</p>
+                    <p>SQL (Basic)</p>
+                  </div>
+                </a>
+
+                <a className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black 
+                transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800" 
+                href="https://www.hackerrank.com/certificates/3bc2ef9fa951" target="_blank" rel="noreferrer">
+                  <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
+                    <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
+                  </div>
+                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                    <p className="mr-3 font-semibold">HackerRank</p>
+                    <p>CSS</p>
+                  </div>
+                </a>
+
+                <a className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black 
+                transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800" 
+                href="https://www.freecodecamp.org/certification/Akosovski/responsive-web-design" target="_blank" rel="noreferrer">
+                  <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
+                    <Image src={freecodecamp} alt="hackerrank-1" className="rounded-lg"/>
+                  </div>
+                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                    <p className="mr-3 font-semibold">freeCodeCamp</p>
+                    <p>Responsive Web Design</p>
+                  </div>
+                </a>
+
+                <a className="flex rounded-lg drop-shadow-lg bg-gray-100 dark:bg-black 
+                transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800" 
+                href="https://www.freecodecamp.org/certification/Akosovski/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">
+                  <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
+                    <Image src={freecodecamp} alt="hackerrank-1" className="rounded-lg"/>
+                  </div>
+                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-0">
+                    <p className="mr-3 font-semibold">freeCodeCamp</p>
+                    <p>Javascript Algorithms & Data Structures</p>
+                  </div>
+                </a>
                 
               </div>
             </div>
