@@ -27,6 +27,7 @@ import node from "../public/node.svg";
 import react from "../public/react.svg";
 import sql from "../public/sql.svg";
 import php from "../public/php.svg";
+import java from "../public/java.svg"
 import laravel from "../public/laravel.svg";
 import django from "../public/django.svg";
 import tailwind from "../public/tailwind.svg";
@@ -173,7 +174,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -189,6 +190,18 @@ export default function Home() {
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-4" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
+              </div>
+
+              {/* JAVA */}
+              <div className="box-border border-1 m-2 mx-4">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Java</h3>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={java} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+                  <div id="progress-bar-15" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -349,7 +362,7 @@ export default function Home() {
                   <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     Project Name
                     <div className="flex justify-end">
-                      <Image src={connected} alt="connected-icon" width={40} height={40}/>
+                      <Image src={connected} alt="connected-icon" width={35} height={35}/>
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
@@ -392,7 +405,7 @@ export default function Home() {
                   <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     Project Name
                     <div className="flex justify-end">
-                      <Image src={disconnected} alt="disconnected-icon" width={40} height={40}/>
+                      <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
@@ -451,7 +464,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 md:text-xl text-lg p-6 dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 md:text-xl text-lg p-6 dark:text-white md:mt-2 mt-1">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>Javascript (Basic)</p>
                   </div>

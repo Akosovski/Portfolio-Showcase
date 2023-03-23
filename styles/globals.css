@@ -188,6 +188,11 @@ a {
   width: 50%;
 }
 
+/* PROGRESS BAR JAVA*/
+#progress-bar-15{
+  width: 30%;
+}
+
 /* ICON TOOLTIP */
 .tooltip {
   position: relative;
