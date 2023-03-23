@@ -175,12 +175,12 @@ a {
 
 /* PROGRESS BAR PHP */
 #progress-bar-12{
-  width: 50%;
+  width: 30%;
 }
 
 /* PROGRESS BAR LARAVEL */
 #progress-bar-13{
-  width: 50%;
+  width: 30%;
 }
 
 /* PROGRESS BAR SQL */
@@ -225,6 +225,18 @@ a {
 
 .tooltip:active{
   visibility: visible;
+}
+
+/* PROJECT DEPLOYMENT ICONS */
+
+.deployment{
+  display: block;
+}
+
+@media only screen and (max-width: 1360px) {
+  .deployment{
+    display: none;
+  }
 }
 
 /* FOOTER ICONS */

@@ -39,6 +39,8 @@ import github from "../public/github.svg";
 import instagram from "../public/instagram.svg";
 import freecodecamp from "../public/freecodecamp.svg";
 import hackerrank from "../public/hackerrank.svg";
+import connected from "../public/connected.svg";
+import disconnected from "../public/disconnected.svg"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -171,7 +173,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -236,7 +238,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Laravel</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={laravel} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this framework</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have intermediate skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -292,7 +294,7 @@ export default function Home() {
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-14" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
@@ -340,12 +342,16 @@ export default function Home() {
 
             <div className="basis-1/3 flex-1">
               <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800">
+              transition ease-in-out delay-50 duration-200 hover:bg-blue-200 dark:hover:bg-blue-800">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold">
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     Project Name
+                    <div className="flex justify-end">
+                      <Image src={connected} alt="connected-icon" width={40} height={40}/>
+                      <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
+                    </div>
                   </Typography>
                   <Typography variant="body2" className="dark:text-white text-lg font-abel">
                     Project Captions
@@ -353,7 +359,7 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -379,12 +385,16 @@ export default function Home() {
 
             <div className="basis-1/3 flex-1">
               <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200 hover:cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800">
+              transition ease-in-out delay-50 duration-200 hover:bg-blue-200 dark:hover:bg-blue-800">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold">
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     Project Name
+                    <div className="flex justify-end">
+                      <Image src={disconnected} alt="disconnected-icon" width={40} height={40}/>
+                      <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
+                    </div>
                   </Typography>
                   <Typography variant="body2" className="dark:text-white text-lg font-abel">
                     Project Captions
@@ -392,13 +402,13 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
                           Project Details
                         </Typography>
-                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                        <Typography id="modal-modal-description" className="md:text-lg text-md" sx={{ mt: 2 }}>
                           This is the details for the project complete description.
                         </Typography>
                         <Box className="flex text-center justify-end w-full mt-4">
@@ -420,12 +430,18 @@ export default function Home() {
         </section>
 
         {/* CERTIFICATIONS */}
-        <section className="py-10">
+        <section className="pb-10">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Certifications</h3>
-            <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200 mb-2">
-              Lorem Ipsum.
+            <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
+            Apart from working on side projects in my free time, I also take several online courses that were available 
+            on learning websites such as Udemy, HackerRank, and freeCodeCamp.
+            Below is the list of certificates I received after completing the courses.
             </p>
+            <p id="initiator" className="font-bold py-2 leading-8 text-blue-600 dark:text-blue-600 mt-1 mb-5 text-center">
+              Click one of the list to see further details.
+            </p>
+
             <div>
               <div className="grid md:grid-cols-2 grid-cols-1 gap-y-5 gap-x-5">
 
@@ -435,7 +451,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 md:text-xl text-lg p-6 dark:text-white md:mt-2 mt-3">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>Javascript (Basic)</p>
                   </div>
@@ -447,7 +463,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-3">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>Python (Basic)</p>
                   </div>
@@ -459,7 +475,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-3">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>SQL (Basic)</p>
                   </div>
@@ -471,7 +487,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-3">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>CSS</p>
                   </div>
@@ -483,7 +499,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={freecodecamp} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-0">
                     <p className="mr-3 font-semibold">freeCodeCamp</p>
                     <p>Responsive Web Design</p>
                   </div>
@@ -495,7 +511,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={freecodecamp} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 text-xl dark:text-white md:mt-2 mt-0">
+                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-0">
                     <p className="mr-3 font-semibold">freeCodeCamp</p>
                     <p>Javascript Algorithms & Data Structures</p>
                   </div>
@@ -509,7 +525,7 @@ export default function Home() {
       </main>
 
       {/* FOOTER */}
-      <footer className="border-solid border-t border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 text-black">
+      <footer className="border-solid border-t border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 text-black mt-10">
         <div className="flex justify-center px-4 py-7">
           <h1 id="footer-desc" className="mt-3 lg:leading-normal font-abel dark:text-white">
             <span className="text-blue-600 font-semibold mr-1">Thank You!</span> for your visit.
