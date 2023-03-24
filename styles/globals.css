@@ -193,6 +193,12 @@ a {
   width: 30%;
 }
 
+/* PROGRESS BAR NEXT*/
+#progress-bar-16{
+  width: 30%;
+}
+
+
 /* ICON TOOLTIP */
 .tooltip {
   position: relative;

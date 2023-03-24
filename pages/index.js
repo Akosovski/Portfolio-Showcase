@@ -33,6 +33,7 @@ import django from "../public/django.svg";
 import tailwind from "../public/tailwind.svg";
 import mongodb from "../public/mongodb.svg";
 import figma from "../public/figma.svg";
+import next from "../public/nextjs.svg"
 import photoshop from "../public/photoshop.svg";
 import linkedin from "../public/linkedin.svg";
 import gitlab from "../public/gitlab.svg";
@@ -231,6 +232,18 @@ export default function Home() {
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-6" class="bg-blue-600 h-2.5 rounded-full"></div>
+                </div>
+              </div>
+
+              {/* NEXT */}
+              <div className="box-border border-1 m-2 mx-4">
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Next JS</h3>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
+                  <Image src={next} width={97} height={97} alt="node-icon" className="transition ease-in-out delay-50 duration-200 brightness-0 dark:brightness-100 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-16" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
