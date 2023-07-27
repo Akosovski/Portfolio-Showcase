@@ -551,7 +551,7 @@ export default function Home() {
       </main>
 
       {/* FOOTER */}
-      <footer className="border-solid border-t border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 text-black mt-10">
+      <footer className="border-solid border-t border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 text-black">
         <div className="flex justify-center px-4 py-7">
           <h1 id="footer-desc" className="mt-3 lg:leading-normal font-abel dark:text-white">
             <span className="text-blue-600 font-semibold mr-1">Thank You!</span> for your visit.
