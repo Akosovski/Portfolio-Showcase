@@ -170,7 +170,7 @@ a {
 
 /* PROGRESS BAR FIGMA */
 #progress-bar-11{
-  width: 50%;
+  width: 30%;
 }
 
 /* PROGRESS BAR PHP */
@@ -198,6 +198,10 @@ a {
   width: 30%;
 }
 
+/* PROGRESS BAR PHOTOSHOP*/
+#progress-bar-17{
+  width: 30%;
+}
 
 /* ICON TOOLTIP */
 .tooltip {

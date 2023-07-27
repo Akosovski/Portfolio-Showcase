@@ -329,7 +329,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">Figma</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={figma} width={100} height={100} alt="figma-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this tool</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this tool</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-11" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -344,7 +344,7 @@ export default function Home() {
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this tool</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-11" class="bg-blue-600 h-2.5 rounded-full"></div>
+                  <div id="progress-bar-17" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
 
