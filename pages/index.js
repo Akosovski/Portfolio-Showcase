@@ -369,7 +369,7 @@ export default function Home() {
 
           <div className="basis-1/3 flex-1">
               <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200 hover:bg-blue-200 dark:hover:bg-blue-800">
+              transition ease-in-out delay-50 duration-200">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
@@ -386,7 +386,7 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel font-bold ">Learn More</Button>
+                    <Button onClick={handleOpen} className="hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel font-bold">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -412,7 +412,7 @@ export default function Home() {
 
             <div className="basis-1/3 flex-1">
               <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200 hover:bg-blue-200 dark:hover:bg-blue-800">
+              transition ease-in-out delay-50 duration-200">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
@@ -429,7 +429,7 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel ">Learn More</Button>
+                    <Button onClick={handleOpen} className="font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
