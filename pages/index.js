@@ -39,6 +39,7 @@ import linkedin from "../public/linkedin.svg";
 import gitlab from "../public/gitlab.svg";
 import github from "../public/github.svg";
 import instagram from "../public/instagram.svg";
+import quora from "../public/quora.svg";
 import freecodecamp from "../public/freecodecamp.svg";
 import hackerrank from "../public/hackerrank.svg";
 import connected from "../public/connected.svg";
@@ -106,7 +107,7 @@ export default function Home() {
               <Image src={akhta} layout="fill" objectFit="cover" alt="profile-pic"/>
             </div>
             <p id="intro-desc" className="py-5 text-justify md:text-center leading-loose text-gray-800 dark:text-gray-200 max-w-m mx-auto">
-            Bachelor of Computer Science from <strong>BINUS University. </strong>
+            Graduated Bachelor of Computer Science from <strong>BINUS University. </strong>
             Already worked on several web application projects and 
             has prior experience in teaching computer programming, 
             currently advancing on <span class="text-blue-600 font-bold">Node.js</span> and <span class="text-blue-600 font-bold">React.js</span>.
@@ -131,7 +132,7 @@ export default function Home() {
             </p>
 
             {/* FLEX BOX PROGRAMMING LANGUAGES */}
-            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-2 -m-1 sm:m-2">
               
               {/* HTML5 */}
                 <div className="box-border border-1 m-2 mx-4">
@@ -239,7 +240,7 @@ export default function Home() {
               <div className="box-border border-1 m-2 mx-4">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Next JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
-                  <Image src={next} width={97} height={97} alt="node-icon" className="transition ease-in-out delay-50 duration-200 brightness-0 dark:brightness-100 hover:brightness-50"/>
+                  <Image src={next} width={97} height={97} alt="node-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
@@ -305,7 +306,7 @@ export default function Home() {
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-3">MongoDB</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
                   <Image src={mongodb} width={100} height={100} alt="mongo-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have beginner skill in this language</span>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-10" class="bg-blue-600 h-2.5 rounded-full"></div>
@@ -372,20 +373,20 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-xl sm:text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     Project Name
                     <div className="flex justify-end">
                       <Image src={connected} alt="connected-icon" width={35} height={35}/>
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                  <Typography variant="body2" className="dark:text-white text-[17px] sm:text-lg font-abel">
                     Project Captions
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 text-[16px] sm:text-lg">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -415,20 +416,20 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-xl sm:text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     Project Name
                     <div className="flex justify-end">
                       <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                  <Typography variant="body2" className="dark:text-white text-[17px] sm:text-lg font-abel">
                     Project Captions
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 text-[16px] sm:text-lg">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -477,7 +478,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 md:text-xl text-lg p-6 dark:text-white md:mt-2 mt-1">
+                  <div className="col-span-2 md:text-xl text-lg p-6 text-gray-800 dark:text-gray-300 md:mt-2 mt-1">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>Javascript (Basic)</p>
                   </div>
@@ -489,7 +490,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 p-6 md:text-xl text-lg text-gray-800 dark:text-gray-300 md:mt-2 mt-3">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>Python (Basic)</p>
                   </div>
@@ -501,7 +502,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 p-6 md:text-xl text-lg text-gray-800 dark:text-gray-300 md:mt-2 mt-3">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>SQL (Basic)</p>
                   </div>
@@ -513,7 +514,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={hackerrank} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-3">
+                  <div className="col-span-2 p-6 md:text-xl text-lg text-gray-800 dark:text-gray-300 md:mt-2 mt-3">
                     <p className="mr-3 font-semibold">HackerRank</p>
                     <p>CSS</p>
                   </div>
@@ -525,7 +526,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={freecodecamp} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-0">
+                  <div className="col-span-2 p-6 md:text-xl text-lg text-gray-800 dark:text-gray-300 md:mt-2 mt-0">
                     <p className="mr-3 font-semibold">freeCodeCamp</p>
                     <p>Responsive Web Design</p>
                   </div>
@@ -537,7 +538,7 @@ export default function Home() {
                   <div className="col-span-2 pt-2 pl-2 w-24 flex-none m-3">
                     <Image src={freecodecamp} alt="hackerrank-1" className="rounded-lg"/>
                   </div>
-                  <div className="col-span-2 p-6 md:text-xl text-lg dark:text-white md:mt-2 mt-0">
+                  <div className="col-span-2 p-6 md:text-xl text-lg text-gray-800 dark:text-gray-300 md:mt-2 mt-0">
                     <p className="mr-3 font-semibold">freeCodeCamp</p>
                     <p>Javascript Algorithms & Data Structures</p>
                   </div>
@@ -553,7 +554,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-solid border-t border-gray-300 bg-gray-100 dark:bg-black dark:border-gray-800 text-black">
         <div className="flex justify-center px-4 py-7">
-          <h1 id="footer-desc" className="mt-3 lg:leading-normal font-abel dark:text-white">
+          <h1 id="footer-desc" className="mt-3 lg:leading-normal font-abel text-gray-800 dark:text-gray-300">
             <span className="text-blue-600 font-semibold mr-1">Thank You!</span> for your visit.
           </h1>
         </div>
@@ -569,6 +570,9 @@ export default function Home() {
           </a>
           <a class="sosmed box-border p-4" href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer">
             <Image src={instagram} width={45} height={45} alt="instagram-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
+          </a>
+          <a class="sosmed box-border p-4" href="https://id.quora.com/profile/Akosovski" target="_blank" rel="noreferrer">
+            <Image src={quora} width={45} height={45} alt="quora-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
           </a>
         </div>
         <div className="font-abel text-center pt-2 text-gray-800 dark:text-white text-md pb-8 mt-3">
