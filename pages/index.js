@@ -117,7 +117,7 @@ export default function Home() {
         </section>
         
         {/* SKILLS & PROFICIENCIES */}
-        <section>
+        <section className="m-0">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Skills & Proficiencies</h3>
             
@@ -373,20 +373,20 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-xl sm:text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
-                    Project Name
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                    UMKM Bookeeping
                     <div className="flex justify-end">
                       <Image src={connected} alt="connected-icon" width={35} height={35}/>
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white text-[17px] sm:text-lg font-abel">
-                    Project Captions
+                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                    Financial bookkeeping and product management web app for MSMEs. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 text-[16px] sm:text-lg">Learn More</Button>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -416,20 +416,20 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-xl sm:text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
-                    Project Name
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                    MyXP
                     <div className="flex justify-end">
                       <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white text-[17px] sm:text-lg font-abel">
-                    Project Captions
+                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                    Activity logging app with progress bar style leveling. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 text-[16px] sm:text-lg">Learn More</Button>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -466,7 +466,7 @@ export default function Home() {
             Below is the list of certificates I received after completing the courses.
             </p>
             <p id="initiator" className="font-bold py-2 leading-8 text-blue-600 dark:text-blue-600 mt-1 mb-5 text-center">
-              Click one of the list to see further details.
+              Click one from the list to see further details.
             </p>
 
             <div>
@@ -559,19 +559,19 @@ export default function Home() {
           </h1>
         </div>
         <div className="flex justify-center py-7 -mt-2">
-          <a class="sosmed box-border p-4" id="github-sosmed" href="https://github.com/Akosovski" target="_blank" rel="noreferrer">
+          <a class="sosmed box-border p-3" id="github-sosmed" href="https://github.com/Akosovski" target="_blank" rel="noreferrer">
             <Image src={github} width={45} height={45} alt="github-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 dark:brightness-200"/>
           </a>
-          <a class="sosmed box-border p-4" href="https://gitlab.com/Akosovski" target="_blank" rel="noreferrer">
+          <a class="sosmed box-border p-3" href="https://gitlab.com/Akosovski" target="_blank" rel="noreferrer">
             <Image src={gitlab} width={45} height={45} alt="gitlab-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
           </a>
-          <a class="sosmed box-border p-4 -mt-2" id="linkedin-sosmed" href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer">
+          <a class="sosmed box-border p-3 -mt-2" id="linkedin-sosmed" href="https://www.linkedin.com/in/muhammad-akhta/" target="_blank" rel="noreferrer">
             <Image src={linkedin} width={60} height={60} alt="linkedin-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
           </a>
-          <a class="sosmed box-border p-4" href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer">
+          <a class="sosmed box-border p-3" href="https://www.instagram.com/akhta.cr/" target="_blank" rel="noreferrer">
             <Image src={instagram} width={45} height={45} alt="instagram-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
           </a>
-          <a class="sosmed box-border p-4" href="https://id.quora.com/profile/Akosovski" target="_blank" rel="noreferrer">
+          <a class="sosmed box-border p-3" href="https://id.quora.com/profile/Akosovski" target="_blank" rel="noreferrer">
             <Image src={quora} width={45} height={45} alt="quora-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 hover:brightness-75"/>
           </a>
         </div>
