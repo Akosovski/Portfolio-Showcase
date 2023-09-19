@@ -373,7 +373,7 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     UMKM Bookeeping
                     <div className="flex justify-end">
                       <Image src={connected} alt="connected-icon" width={35} height={35}/>
@@ -416,7 +416,7 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-2xl text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
                     MyXP
                     <div className="flex justify-end">
                       <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
