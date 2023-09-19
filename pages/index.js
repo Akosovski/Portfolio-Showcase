@@ -380,13 +380,13 @@ export default function Home() {
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white lg:text-xl xl:text-xl md:text-lg sm:text-lg text-lg font-abel">
+                  <Typography variant="body1" className="dark:text-white font-abel text-lg">
                     Financial bookkeeping and product management web app for MSMEs. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Button onClick={handleOpen} className="hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel font-bold ">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -423,13 +423,13 @@ export default function Home() {
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white lg:text-xl xl:text-xl md:text-lg sm:text-lg text-lg font-abel">
+                  <Typography variant="body1" className="dark:text-white text-lg font-abel">
                     Activity logging app with progress bar style leveling. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Button onClick={handleOpen} className="font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel ">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
