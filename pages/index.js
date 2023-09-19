@@ -367,7 +367,91 @@ export default function Home() {
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
-            
+          <div className="basis-1/3 flex-1">
+              <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
+              transition ease-in-out delay-50 duration-200 hover:bg-blue-200 dark:hover:bg-blue-800">
+                <CardMedia component="img" title="web1"
+                  image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                    UMKM Bookeeping
+                    <div className="flex justify-end">
+                      <Image src={connected} alt="connected-icon" width={35} height={35}/>
+                      <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
+                    </div>
+                  </Typography>
+                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                    Financial bookkeeping and product management web app for MSMEs. 
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <div>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                      <Box sx={modal_style} className="rounded-xl bg-white">
+                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                          Project Details
+                        </Typography>
+                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                          This is the details for the project complete description.
+                        </Typography>
+                        <Box className="flex text-center justify-end w-full mt-4">
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">View Code</Button>
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">Production</Button>
+                        </Box>
+                      </Box>
+                    </Modal>
+                  </div>
+                </CardActions>
+              </Card>
+            </div>
+
+            <div className="basis-1/3 flex-1">
+              <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
+              transition ease-in-out delay-50 duration-200 hover:bg-blue-200 dark:hover:bg-blue-800">
+                <CardMedia component="img" title="web1"
+                  image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                    MyXP
+                    <div className="flex justify-end">
+                      <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
+                      <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
+                    </div>
+                  </Typography>
+                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                    Activity logging app with progress bar style leveling. 
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <div>
+                    <Button onClick={handleOpen} className="dark:text-white text-lg font-abel font-bold hover:underline underline-offset-4 transition ease-in-out delay-50 duration-200">Learn More</Button>
+                    <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                      <Box sx={modal_style} className="rounded-xl bg-white">
+                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                          Project Details
+                        </Typography>
+                        <Typography id="modal-modal-description" className="md:text-lg text-md" sx={{ mt: 2 }}>
+                          This is the details for the project complete description.
+                        </Typography>
+                        <Box className="flex text-center justify-end w-full mt-4">
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">View Code</Button>
+                          <Button href="https://github.com/Akosovski" 
+                          className="mt-3 text-blue-600 font-abel font-bold -mb-3" 
+                          target="_blank" rel="noreferrer">Production</Button>
+                        </Box>
+                      </Box>
+                    </Modal>
+                  </div>
+                </CardActions>
+              </Card>
+            </div>
 
           </div>
         </section>
