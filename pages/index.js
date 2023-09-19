@@ -380,7 +380,7 @@ export default function Home() {
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                  <Typography variant="body2" className="dark:text-white lg:text-xl xl:text-xl md:text-lg sm:text-lg text-lg font-abel">
                     Financial bookkeeping and product management web app for MSMEs. 
                   </Typography>
                 </CardContent>
@@ -423,7 +423,7 @@ export default function Home() {
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                  <Typography variant="body2" className="dark:text-white lg:text-xl xl:text-xl md:text-lg sm:text-lg text-lg font-abel">
                     Activity logging app with progress bar style leveling. 
                   </Typography>
                 </CardContent>
