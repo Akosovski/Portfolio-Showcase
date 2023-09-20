@@ -3,7 +3,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import * as React from 'react';
 import { useState } from "react";
 import Image from "next/image";
-import 'tailwindcss/tailwind.css';
 
 // Material UIs
 import Card from '@mui/material/Card';
@@ -14,6 +13,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+
+import 'tailwindcss/tailwind.css';
 
 // PNG
 import akhta from "../public/akhta-profile.png";
