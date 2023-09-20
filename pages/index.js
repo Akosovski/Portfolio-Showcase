@@ -3,6 +3,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import * as React from 'react';
 import { useState } from "react";
 import Image from "next/image";
+import 'tailwindcss/tailwind.css';
 
 // Material UIs
 import Card from '@mui/material/Card';
@@ -380,7 +381,7 @@ export default function Home() {
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
-                  <Typography className="dark:text-white font-abel text-lg">
+                  <Typography variant="body2" className="dark:text-white font-abel text-lg">
                     Financial bookkeeping and product management web app for MSMEs. 
                   </Typography>
                 </CardContent>
@@ -423,7 +424,7 @@ export default function Home() {
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
-                  <Typography className="dark:text-white text-lg font-abel">
+                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
                     Activity logging app with progress bar style leveling. 
                   </Typography>
                 </CardContent>
