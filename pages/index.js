@@ -375,20 +375,20 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                  <Typography component="div" className="font-abel text-blue-600 dark:text-white grid grid-cols-2 justify-end mt-1 card-title">
                     UMKM Bookeeping
                     <div className="flex justify-end">
                       <Image src={connected} alt="connected-icon" width={35} height={35}/>
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white font-abel text-lg">
+                  <Typography className="dark:text-white font-abel card-desc">
                     Financial bookkeeping and product management web app for MSMEs. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="font-bold transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel">Learn More</Button>
+                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-white font-abel more-button">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -418,20 +418,20 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" className="font-abel text-blue-600 dark:text-white font-bold grid grid-cols-2 justify-end mt-1">
+                  <Typography component="div" className="font-abel text-blue-600 dark:text-white grid grid-cols-2 justify-end mt-1 card-title">
                     MyXP
                     <div className="flex justify-end">
                       <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
-                  <Typography variant="body2" className="dark:text-white text-lg font-abel">
+                  <Typography className="dark:text-white font-abel card-desc">
                     Activity logging app with progress bar style leveling. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="font-bold transition ease-in-out delay-50 duration-200 dark:text-white text-lg font-abel">Learn More</Button>
+                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-white font-abel more-button">Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
