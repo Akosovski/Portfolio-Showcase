@@ -132,7 +132,7 @@ export default function Home() {
             </p>
 
             {/* FLEX BOX PROGRAMMING LANGUAGES */}
-            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-2 -m-1 sm:m-2">
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-2 -m-2 sm:m-2">
               
               {/* HTML5 */}
                 <div className="box-border border-1 m-2 mx-4">
@@ -210,7 +210,7 @@ export default function Home() {
             </div>
 
             {/* FLEX BOX FRAMEWORK & LIBRARIES */}
-            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-2 -m-2 sm:m-2">
               
               {/* REACT */}
               <div className="box-border border-1 m-2 mx-4">
@@ -299,7 +299,7 @@ export default function Home() {
             </div>
 
             {/* FLEX BOX DATABASES & TOOLS */}
-            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-3">
+            <div className="box-border border-1 flex flex-row flex-wrap justify-center p-2 -m-2 sm:m-2">
             
               {/* MONGODB */}
               <div className="box-border border-1 m-2 mx-4">
@@ -357,7 +357,7 @@ export default function Home() {
         {/* PROJECT PORTFOLIOS */}
         <section className="py-10">
           <div>
-            <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Project Portfolios</h3>
+            <h3 className="font-abel text-xl py-1 dark:text-gray-200 font-bold">Project Portfolios</h3>
             <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
               I already completed projects which were used for college and my own side projects I made in my free time.
               Here are the list of projects that I have completed, I also linked them to the codebase in my Github. 
@@ -373,7 +373,7 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography component="div" className="font-abel text-blue-600 dark:text-white grid grid-cols-2 justify-end mt-1"
+                  <Typography component="div" className="font-abel text-blue-600 dark:text-gray-200 grid grid-cols-2 justify-end mt-1"
                   style={{ fontWeight: 'bold', fontSize: 'x-large'}}>
                     UMKM Bookeeping
                     <div className="flex justify-end">
@@ -381,14 +381,14 @@ export default function Home() {
                       <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
                     </div>
                   </Typography>
-                  <Typography className="dark:text-white font-abel card-desc"
+                  <Typography className="dark:text-gray-200 font-abel card-desc"
                   style={{ marginTop: '12px', fontWeight: 'normal', fontSize: 'large'}}>
                     Financial bookkeeping and product management web app for MSMEs. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-white font-abel"
+                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
                     style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
@@ -419,7 +419,7 @@ export default function Home() {
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
-                  <Typography component="div" className="font-abel text-blue-600 dark:text-white grid grid-cols-2 justify-end mt-1"
+                  <Typography component="div" className="font-abel text-blue-600 dark:text-gray-200 grid grid-cols-2 justify-end mt-1"
                   style={{ fontWeight: 'bold', fontSize: 'x-large'}}>
                     MyXP
                     <div className="flex justify-end">
@@ -427,14 +427,14 @@ export default function Home() {
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
                     </div>
                   </Typography>
-                  <Typography className="dark:text-white font-abel card-desc"
+                  <Typography className="dark:text-gray-200 font-abel card-desc"
                   style={{ marginTop: '12px', fontWeight: 'normal', fontSize: 'large'}}>
                     Activity logging app with progress bar style leveling. 
                   </Typography>
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-white font-abel"
+                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
                     style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
                       <Box sx={modal_style} className="rounded-xl bg-white">
@@ -564,8 +564,8 @@ export default function Home() {
             <span className="text-blue-600 font-semibold mr-1">Thank You!</span> for your visit.
           </h1>
         </div>
-        <div className="flex justify-center py-7 -mt-2">
-          <a class="sosmed box-border p-3" id="github-sosmed" href="https://github.com/Akosovski" target="_blank" rel="noreferrer">
+        <div className="flex justify-center py-7 -mt-2 px-4">
+          <a class="sosmed box-border p-3 sm:p-3" id="github-sosmed" href="https://github.com/Akosovski" target="_blank" rel="noreferrer">
             <Image src={github} width={45} height={45} alt="github-icon" className="cursor-pointer transition ease-in-out delay-50 duration-200 dark:brightness-200"/>
           </a>
           <a class="sosmed box-border p-3" href="https://gitlab.com/Akosovski" target="_blank" rel="noreferrer">
