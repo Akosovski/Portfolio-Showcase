@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import * as React from 'react';
@@ -10,9 +12,11 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import Carousel from 'react-material-ui-carousel';
+import { Paper, Button } from '@mui/material';
+
 
 // PNG
 import akhta from "../public/akhta-profile.png";
@@ -45,21 +49,44 @@ import hackerrank from "../public/hackerrank.svg";
 import connected from "../public/connected.svg";
 import disconnected from "../public/disconnected.svg"
 
+function Item(props)
+{
+    return (
+        <Paper className="flex-auto w-max justify-center">
+            <img src={props.item.imageURL} alt={props.item.name} />
+        </Paper>
+    )
+}
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+
+  const [open1, setOpen1] = React.useState(false);
+  const handleOpen1 = () => setOpen1(true);
+  const handleClose1 = () => setOpen1(false);
+
+  const [open2, setOpen2] = React.useState(false);
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false);
 
   const modal_style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    minWidth: 335,
+    minWidth: 435,
     boxShadow: 24,
     p: 4,
   };
+
+  var items = [
+    {
+      imageURL: "https://mui.com/static/images/cards/contemplative-reptile.jpg"
+    },
+    {
+      imageURL: "https://mui.com/static/images/cards/contemplative-reptile.jpg"
+    }
+  ]
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -377,8 +404,13 @@ export default function Home() {
                   style={{ fontWeight: 'bold', fontSize: 'x-large'}}>
                     UMKM Bookeeping
                     <div className="flex justify-end">
-                      <Image src={connected} alt="connected-icon" width={35} height={35}/>
-                      <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span>
+                      
+                      {/* <Image src={connected} alt="connected-icon" width={35} height={35}/>
+                      <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span> */}
+
+                      <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
+                      <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
+
                     </div>
                   </Typography>
                   <Typography className="dark:text-gray-200 font-abel card-desc"
@@ -388,24 +420,36 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
+                    <Button onClick={handleOpen1} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
                     style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
-                    <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                      <Box sx={modal_style} className="rounded-xl bg-white">
-                        <Typography id="modal-modal-title" variant="h6" component="h2">
-                          Project Details
-                        </Typography>
-                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                          This is the details for the project complete description.
-                        </Typography>
-                        <Box className="flex text-center justify-end w-full mt-4">
-                          <Button href="https://github.com/Akosovski" 
-                          className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
-                          target="_blank" rel="noreferrer">View Code</Button>
-                          <Button href="https://github.com/Akosovski" 
-                          className="mt-3 text-blue-600 font-abel font-bold -mb-3" 
-                          target="_blank" rel="noreferrer">Production</Button>
-                        </Box>
+                    <Modal open={open1} onClose={handleClose1} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                      <Box sx={modal_style} className="rounded-xl bg-white w-96 md:w-fit">
+                        <div className="w-fit">
+                          <Typography id="modal-modal-title" variant="h6" component="h2">
+                            Project Details
+                          </Typography>
+
+                          <Carousel className="mt-5">
+                              {
+                                  items.map( (item, i) => <Item key={i} item={item} /> )
+                              }
+                          </Carousel>
+
+                          <Typography id="modal-modal-description" sx={{ mt: 2 }}
+                          style={{fontWeight: 'normal', fontSize: 'large'}}>
+                            This is the details for the UMKM Bookeeping project complete description.
+                          </Typography>
+                          <Box className="flex text-center justify-end w-full mt-4">
+                            <Button href="https://github.com/Akosovski/UMKMbookeeping" 
+                            className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
+                            style={{ fontWeight: 'bold', fontSize: 'large'}}
+                            target="_blank" rel="noreferrer">View Code</Button>
+                            <Button href="https://github.com/Akosovski" 
+                            className="mt-3 text-blue-600 font-abel font-bold -mb-3 opacity-50 pointer-events-none" 
+                            style={{ fontWeight: 'bold', fontSize: 'large'}}
+                            target="_blank" rel="noreferrer">Production</Button>
+                          </Box>
+                        </div>
                       </Box>
                     </Modal>
                   </div>
@@ -423,8 +467,10 @@ export default function Home() {
                   style={{ fontWeight: 'bold', fontSize: 'x-large'}}>
                     MyXP
                     <div className="flex justify-end">
+
                       <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
                       <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
+
                     </div>
                   </Typography>
                   <Typography className="dark:text-gray-200 font-abel card-desc"
@@ -434,22 +480,32 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <div>
-                    <Button onClick={handleOpen} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
+                    <Button onClick={handleOpen2} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
                     style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
-                    <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                      <Box sx={modal_style} className="rounded-xl bg-white">
+                    <Modal open={open2} onClose={handleClose2} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                    <Box sx={modal_style} className="rounded-xl bg-white w-96 md:w-fit">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
                           Project Details
                         </Typography>
-                        <Typography id="modal-modal-description" className="md:text-lg text-md" sx={{ mt: 2 }}>
-                          This is the details for the project complete description.
+
+                        <Carousel className="mt-5">
+                            {
+                                items.map( (item, i) => <Item key={i} item={item} /> )
+                            }
+                        </Carousel>
+
+                        <Typography id="modal-modal-description" className="md:text-lg text-md" sx={{ mt: 2 }}
+                        style={{fontWeight: 'normal', fontSize: 'large'}}>
+                          This is the details for the MyXP project complete description.
                         </Typography>
                         <Box className="flex text-center justify-end w-full mt-4">
-                          <Button href="https://github.com/Akosovski" 
+                          <Button href="https://github.com/Akosovski/MyXP" 
                           className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
+                          style={{ fontWeight: 'bold', fontSize: 'large'}}
                           target="_blank" rel="noreferrer">View Code</Button>
                           <Button href="https://github.com/Akosovski" 
-                          className="mt-3 text-blue-600 font-abel font-bold -mb-3" 
+                          className="mt-3 text-blue-600 font-abel font-bold -mb-3 opacity-50 pointer-events-none" 
+                          style={{ fontWeight: 'bold', fontSize: 'large'}}
                           target="_blank" rel="noreferrer">Production</Button>
                         </Box>
                       </Box>
