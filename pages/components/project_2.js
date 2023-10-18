@@ -47,10 +47,16 @@ export default function Project2() {
     
     const items = [
         {
-          imageURL: "https://cdn.discordapp.com/attachments/995173807750926346/1025696759550320690/Pembukuan_Owner.png"
+          imageURL: "https://media.discordapp.net/attachments/995173807750926346/1164215397030043729/MyXP_1.png?ex=65426714&is=652ff214&hm=280420277d99af927a2411a0dcbc988bd0c283700ce31ff45bd2e26ac64cef46&=&width=1342&height=671"
         },
         {
-          imageURL: "https://cdn.discordapp.com/attachments/995173807750926346/1025696759550320690/Pembukuan_Owner.png"
+          imageURL: "https://media.discordapp.net/attachments/995173807750926346/1164215400943341679/MyXP_2.png?ex=65426715&is=652ff215&hm=ee235c6b7d1585dd1bbdadbaf28b138392d364ca411514d69a61be474a67be8b&=&width=1342&height=671"
+        },
+        {
+          imageURL: "https://media.discordapp.net/attachments/995173807750926346/1164215401228533811/MyXP_3.png?ex=65426715&is=652ff215&hm=09963b93f7fca244ae61aeecc990f1b5c472509d1ba2f8f5c8d6685eeaa34fb2&=&width=1342&height=671"
+        },
+        {
+          imageURL: "https://media.discordapp.net/attachments/995173807750926346/1164215401526337607/MyXP_4.png?ex=65426715&is=652ff215&hm=b07c43a4a6c808a73f286c9e2c947b5188e5909834fec6fcd37a52e826fa6e47&=&width=1342&height=671"
         }
     ]
 
