@@ -117,31 +117,8 @@ export default function Project1() {
               </CardContent>
               <CardActions className="learn-more-container">
                   <div>
-                      <Button onClick={handleOpen} className="learn-more-button transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
-                          style={{ fontWeight: 'bold', fontSize: 'medium' }}>Learn More</Button>
-                      <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                          <Box sx={modal_style} className="rounded-xl bg-white">
-                              <div className="w-fit">
-                                  <Typography id="modal-modal-title" variant="h6" component="h2">
-                                      Project Details
-                                  </Typography>
-                                  <Typography id="modal-modal-description" sx={{ mt: 2 }}
-                                      style={{ fontWeight: 'normal', fontSize: 'large' }}>
-                                      This is the details for the UMKM Bookeeping project complete description.
-                                  </Typography>
-                                  <Box className="flex text-center justify-end w-full mt-4">
-                                      <Button href="https://github.com/Akosovski/UMKMbookeeping"
-                                          className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3"
-                                          style={{ fontWeight: 'bold', fontSize: 'large' }}
-                                          target="_blank" rel="noreferrer">View Code</Button>
-                                      <Button href="https://github.com/Akosovski"
-                                          className="mt-3 text-blue-600 font-abel font-bold -mb-3 opacity-50 pointer-events-none"
-                                          style={{ fontWeight: 'bold', fontSize: 'large' }}
-                                          target="_blank" rel="noreferrer">Production</Button>
-                                  </Box>
-                              </div>
-                          </Box>
-                      </Modal>
+                        <Button href="https://github.com/Akosovski/UMKMBookeeping" className="learn-more-button transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
+                        target="_blank" rel="noreferrer" style={{ fontWeight: 'bold', fontSize: 'medium'}}>View Code</Button>
                   </div>
               </CardActions>
           </Card>
