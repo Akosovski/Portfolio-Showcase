@@ -3,7 +3,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import * as React from 'react';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // Material UIs
@@ -17,43 +17,46 @@ import Modal from '@mui/material/Modal';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button } from '@mui/material';
 
+// Components
+import Project1 from "./components/project_1";
+import Project2 from "./components/project_2";
 
 // PNG
-import akhta from "../public/akhta-profile.png";
+import akhta from "../pages/assets/akhta-profile.png";
 
 // SVG FILES
-import bootstrap from "../public/bootstrap.svg";
-import html5 from "../public/html5.svg";
-import css from "../public/css.svg";
-import js from "../public/javascript.svg";
-import python from "../public/python.svg";
-import node from "../public/node.svg";
-import react from "../public/react.svg";
-import sql from "../public/sql.svg";
-import php from "../public/php.svg";
-import java from "../public/java.svg"
-import laravel from "../public/laravel.svg";
-import django from "../public/django.svg";
-import tailwind from "../public/tailwind.svg";
-import mongodb from "../public/mongodb.svg";
-import figma from "../public/figma.svg";
-import next from "../public/nextjs.svg"
-import photoshop from "../public/photoshop.svg";
-import linkedin from "../public/linkedin.svg";
-import gitlab from "../public/gitlab.svg";
-import github from "../public/github.svg";
-import instagram from "../public/instagram.svg";
-import quora from "../public/quora.svg";
-import freecodecamp from "../public/freecodecamp.svg";
-import hackerrank from "../public/hackerrank.svg";
-import connected from "../public/connected.svg";
-import disconnected from "../public/disconnected.svg"
+import bootstrap from "../pages/assets/bootstrap.svg";
+import html5 from "../pages/assets/html5.svg";
+import css from "../pages/assets/css.svg";
+import js from "../pages/assets/javascript.svg";
+import python from "../pages/assets/python.svg";
+import node from "../pages/assets/node.svg";
+import react from "../pages/assets/react.svg";
+import sql from "../pages/assets/sql.svg";
+import php from "../pages/assets/php.svg";
+import java from "../pages/assets/java.svg"
+import laravel from "../pages/assets/laravel.svg";
+import django from "../pages/assets/django.svg";
+import tailwind from "../pages/assets/tailwind.svg";
+import mongodb from "../pages/assets/mongodb.svg";
+import figma from "../pages/assets/figma.svg";
+import next from "../pages/assets/nextjs.svg"
+import photoshop from "../pages/assets/photoshop.svg";
+import linkedin from "../pages/assets/linkedin.svg";
+import gitlab from "../pages/assets/gitlab.svg";
+import github from "../pages/assets/github.svg";
+import instagram from "../pages/assets/instagram.svg";
+import quora from "../pages/assets/quora.svg";
+import freecodecamp from "../pages/assets/freecodecamp.svg";
+import hackerrank from "../pages/assets/hackerrank.svg";
+import connected from "../pages/assets/connected.svg";
+import disconnected from "../pages/assets/disconnected.svg"
 
 function Item(props)
 {
     return (
-        <Paper className="flex-auto w-max justify-center">
-            <img src={props.item.imageURL} alt={props.item.name} />
+        <Paper>
+            <img src={props.item.imageURL} alt={props.item.name}/>
         </Paper>
     )
 }
@@ -61,10 +64,12 @@ function Item(props)
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
+  /* Project Card 1 - UMKMBookeeping */
   const [open1, setOpen1] = React.useState(false);
   const handleOpen1 = () => setOpen1(true);
   const handleClose1 = () => setOpen1(false);
 
+  /* Project Card 2 - MyXP */
   const [open2, setOpen2] = React.useState(false);
   const handleOpen2 = () => setOpen2(true);
   const handleClose2 = () => setOpen2(false);
@@ -79,14 +84,15 @@ export default function Home() {
     p: 4,
   };
 
-  var items = [
+  const items = [
     {
-      imageURL: "https://mui.com/static/images/cards/contemplative-reptile.jpg"
+      imageURL: "https://cdn.discordapp.com/attachments/995173807750926346/1025696759550320690/Pembukuan_Owner.png"
     },
     {
-      imageURL: "https://mui.com/static/images/cards/contemplative-reptile.jpg"
+      imageURL: "https://cdn.discordapp.com/attachments/995173807750926346/1025696759550320690/Pembukuan_Owner.png"
     }
   ]
+
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -394,114 +400,9 @@ export default function Home() {
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
-          <div className="basis-1/3 flex-1">
-              <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200 min-h-full">
-                <CardMedia component="img" title="web1"
-                  image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
-                <CardContent>
-                  <Typography component="div" className="font-abel text-blue-600 dark:text-gray-200 grid grid-cols-2 justify-end mt-1"
-                  style={{ fontWeight: 'bold', fontSize: 'x-large'}}>
-                    UMKM Bookeeping
-                    <div className="flex justify-end">
-                      
-                      {/* <Image src={connected} alt="connected-icon" width={35} height={35}/>
-                      <span className="text-green-600 m-2 mt-1 text-xl deployment">Deployed</span> */}
+            <Project1></Project1>
 
-                      <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
-                      <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
-
-                    </div>
-                  </Typography>
-                  <Typography className="dark:text-gray-200 font-abel card-desc"
-                  style={{ marginTop: '12px', fontWeight: 'normal', fontSize: 'large'}}>
-                    Financial bookkeeping and product management web app for MSMEs. 
-                  </Typography>
-                </CardContent>
-                <CardActions className="learn-more-container">
-                  <div>
-                    <Button onClick={handleOpen1} className="learn-more-button transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
-                    style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
-                    <Modal open={open1} onClose={handleClose1} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                      <Box sx={modal_style} className="rounded-xl bg-white">
-                        <div className="w-fit">
-                          <Typography id="modal-modal-title" variant="h6" component="h2">
-                            Project Details
-                          </Typography>
-
-                          <Typography id="modal-modal-description" sx={{ mt: 2 }}
-                          style={{fontWeight: 'normal', fontSize: 'large'}}>
-                            This is the details for the UMKM Bookeeping project complete description.
-                          </Typography>
-                          <Box className="flex text-center justify-end w-full mt-4">
-                            <Button href="https://github.com/Akosovski/UMKMbookeeping" 
-                            className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
-                            style={{ fontWeight: 'bold', fontSize: 'large'}}
-                            target="_blank" rel="noreferrer">View Code</Button>
-                            <Button href="https://github.com/Akosovski" 
-                            className="mt-3 text-blue-600 font-abel font-bold -mb-3 opacity-50 pointer-events-none" 
-                            style={{ fontWeight: 'bold', fontSize: 'large'}}
-                            target="_blank" rel="noreferrer">Production</Button>
-                          </Box>
-                        </div>
-                      </Box>
-                    </Modal>
-                  </div>
-                </CardActions>
-              </Card>
-            </div>
-
-            <div className="basis-1/3 flex-1">
-              <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200 min-h-full">
-                <CardMedia component="img" title="web1"
-                  image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
-                <CardContent>
-                  <Typography component="div" className="font-abel text-blue-600 dark:text-gray-200 grid grid-cols-2 justify-end mt-1"
-                  style={{ fontWeight: 'bold', fontSize: 'x-large'}}>
-                    MyXP
-                    <div className="flex justify-end">
-
-                      <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
-                      <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
-
-                    </div>
-                  </Typography>
-                  <Typography className="dark:text-gray-200 font-abel card-desc"
-                  style={{ marginTop: '12px', fontWeight: 'normal', fontSize: 'large'}}>
-                    Activity logging app with progress bar style leveling. 
-                  </Typography>
-                </CardContent>
-                <CardActions className="learn-more-container">
-                  <div>
-                    <Button onClick={handleOpen2} className="learn-more-button transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
-                    style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
-                    <Modal open={open2} onClose={handleClose2} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                    <Box sx={modal_style} className="rounded-xl bg-white">
-                        <Typography id="modal-modal-title" variant="h6" component="h2">
-                          Project Details
-                        </Typography>
-
-                        <Typography id="modal-modal-description" className="md:text-lg text-md" sx={{ mt: 2 }}
-                        style={{fontWeight: 'normal', fontSize: 'large'}}>
-                          This is the details for the MyXP project complete description.
-                        </Typography>
-                        <Box className="flex text-center justify-end w-full mt-4">
-                          <Button href="https://github.com/Akosovski/MyXP" 
-                          className="mt-3 mr-3 text-blue-600 font-abel font-bold -mb-3" 
-                          style={{ fontWeight: 'bold', fontSize: 'large'}}
-                          target="_blank" rel="noreferrer">View Code</Button>
-                          <Button href="https://github.com/Akosovski" 
-                          className="mt-3 text-blue-600 font-abel font-bold -mb-3 opacity-50 pointer-events-none" 
-                          style={{ fontWeight: 'bold', fontSize: 'large'}}
-                          target="_blank" rel="noreferrer">Production</Button>
-                        </Box>
-                      </Box>
-                    </Modal>
-                  </div>
-                </CardActions>
-              </Card>
-            </div>
+            <Project2></Project2>
 
           </div>
         </section>
