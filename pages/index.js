@@ -74,7 +74,7 @@ export default function Home() {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    minWidth: 435,
+    minWidth: 350,
     boxShadow: 24,
     p: 4,
   };
@@ -396,7 +396,7 @@ export default function Home() {
 
           <div className="basis-1/3 flex-1">
               <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200">
+              transition ease-in-out delay-50 duration-200 min-h-full">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
@@ -418,22 +418,16 @@ export default function Home() {
                     Financial bookkeeping and product management web app for MSMEs. 
                   </Typography>
                 </CardContent>
-                <CardActions>
+                <CardActions className="learn-more-container">
                   <div>
-                    <Button onClick={handleOpen1} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
+                    <Button onClick={handleOpen1} className="learn-more-button transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
                     style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
                     <Modal open={open1} onClose={handleClose1} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                      <Box sx={modal_style} className="rounded-xl bg-white w-96 md:w-fit">
+                      <Box sx={modal_style} className="rounded-xl bg-white">
                         <div className="w-fit">
                           <Typography id="modal-modal-title" variant="h6" component="h2">
                             Project Details
                           </Typography>
-
-                          <Carousel className="mt-5">
-                              {
-                                  items.map( (item, i) => <Item key={i} item={item} /> )
-                              }
-                          </Carousel>
 
                           <Typography id="modal-modal-description" sx={{ mt: 2 }}
                           style={{fontWeight: 'normal', fontSize: 'large'}}>
@@ -459,7 +453,7 @@ export default function Home() {
 
             <div className="basis-1/3 flex-1">
               <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
-              transition ease-in-out delay-50 duration-200">
+              transition ease-in-out delay-50 duration-200 min-h-full">
                 <CardMedia component="img" title="web1"
                   image="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>
                 <CardContent>
@@ -478,21 +472,15 @@ export default function Home() {
                     Activity logging app with progress bar style leveling. 
                   </Typography>
                 </CardContent>
-                <CardActions>
+                <CardActions className="learn-more-container">
                   <div>
-                    <Button onClick={handleOpen2} className="transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
+                    <Button onClick={handleOpen2} className="learn-more-button transition ease-in-out delay-50 duration-200 dark:text-gray-200 font-abel"
                     style={{ fontWeight: 'bold', fontSize: 'medium'}}>Learn More</Button>
                     <Modal open={open2} onClose={handleClose2} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                    <Box sx={modal_style} className="rounded-xl bg-white w-96 md:w-fit">
+                    <Box sx={modal_style} className="rounded-xl bg-white">
                         <Typography id="modal-modal-title" variant="h6" component="h2">
                           Project Details
                         </Typography>
-
-                        <Carousel className="mt-5">
-                            {
-                                items.map( (item, i) => <Item key={i} item={item} /> )
-                            }
-                        </Carousel>
 
                         <Typography id="modal-modal-description" className="md:text-lg text-md" sx={{ mt: 2 }}
                         style={{fontWeight: 'normal', fontSize: 'large'}}>

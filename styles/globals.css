@@ -245,9 +245,24 @@ a {
   display: block;
 }
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1390px) {
   .deployment{
     display: none;
+  }
+}
+
+/* LEARN MORE CONTAINER */
+
+@media only screen and (min-width: 960px) {
+  .learn-more-container{
+    padding-top: 25px;
+    padding-bottom: 18px;
+  }
+
+  .learn-more-button{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 5px;
   }
 }
 
