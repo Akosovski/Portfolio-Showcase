@@ -392,9 +392,10 @@ export default function Home() {
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-gray-200 font-bold">Project Portfolios</h3>
             <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I already completed projects which were used for college and my own side projects I made in my free time.
-              Here are the list of projects that I have completed, I also linked them to the codebase in my Github. 
-              Some of them are already deployed into production, and the rest are currently offline.
+              I already completed a handful of projects which were used for college and my own side projects I made in my free time.
+              Here is the list of projects that I have completed, I also linked them to the codebase in my Github. 
+              Some of them which were already deployed into production are tagged with <span className="text-green-500 font-bold">green</span> icons, 
+              while <span className="text-red-500 font-bold">red</span> ones are currently offline.
             </p>
           </div>
 

@@ -56,39 +56,15 @@ export default function Project2() {
 
     useEffect(() => {
       const handleResize = () => {
-        if (window.innerWidth < 370) {
           setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
-        if (window.innerWidth < 430) {
-          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
-        if (window.innerWidth < 500) {
-          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
-        if (window.innerWidth < 768) {
-          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
-        if (window.innerWidth < 960) {
-          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
-        if (window.innerWidth < 1280) {
-            setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
-        if (window.innerWidth < 1920) {
-            setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
-        if (window.innerWidth < 2160) {
-            setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
-        }
       };
-  
+
       window.addEventListener('resize', handleResize);
-  
+
       return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-      }, [items]
-    );
+          window.removeEventListener('resize', handleResize);
+      };
+    }, [items]);
 
     return (
         <div className="basis-1/3 flex-1">
