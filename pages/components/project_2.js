@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
 import { useState, useEffect } from "react";
@@ -30,6 +31,7 @@ export default function Project2() {
 
     /* Project Card 2 - MyXP */
     const [open, setOpen] = React.useState(false);
+    const [carouselIndex, setCarouselIndex] = useState(0);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
@@ -52,11 +54,52 @@ export default function Project2() {
         }
     ]
 
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 370) {
+          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+        if (window.innerWidth < 430) {
+          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+        if (window.innerWidth < 500) {
+          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+        if (window.innerWidth < 768) {
+          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+        if (window.innerWidth < 960) {
+          setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+        if (window.innerWidth < 1280) {
+            setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+        if (window.innerWidth < 1920) {
+            setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+        if (window.innerWidth < 2160) {
+            setCarouselIndex((prevIndex) => (prevIndex + 1) % items.length);
+        }
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+      }, [items]
+    );
+
     return (
         <div className="basis-1/3 flex-1">
               <Card className="rounded-lg dark:bg-black drop-shadow-xl bg-gray-100
               transition ease-in-out delay-50 duration-200 min-h-full">
-                <Carousel IndicatorIcon={false} className="-mb-8">
+                <Carousel
+                  index={carouselIndex} 
+                  autoPlay={false}
+                  animation="slide"
+                  indicators={false}
+              >
                   {
                     items.map( (item, i) => <Item key={i} item={item} /> )
                   }
