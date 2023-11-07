@@ -20,6 +20,7 @@ import { Paper, Button } from '@mui/material';
 // Components
 import Project1 from "./components/project_1";
 import Project2 from "./components/project_2";
+import MiniProject1 from "./components/miniproject_1";
 
 // PNG
 import akhta from "../pages/assets/akhta-profile.png";
@@ -408,8 +409,23 @@ export default function Home() {
           </div>
         </section>
 
+        {/* MINI PROJECTS */}
+        {/* <section className="py-10">
+          <div>
+            <h3 className="font-abel text-xl py-1 dark:text-gray-200 font-bold">Mini Projects</h3>
+            <p id="mini-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
+             
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+
+          </div>
+
+        </section> */}
+
         {/* CERTIFICATIONS */}
-        <section className="pb-10">
+        <section className="py-10 pt-5">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Certifications</h3>
             <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
