@@ -33,7 +33,7 @@ import js from "../pages/assets/javascript.svg";
 import python from "../pages/assets/python.svg";
 import node from "../pages/assets/node.svg";
 import react from "../pages/assets/react.svg";
-import sql from "../pages/assets/sql.svg";
+import postgresql from "../pages/assets/postgresql.svg";
 import php from "../pages/assets/php.svg";
 import java from "../pages/assets/java.svg"
 import laravel from "../pages/assets/laravel.svg";
@@ -119,7 +119,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer sm:text-xl text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
-                  href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/069f81aaff82a167820afa9b0b1fdacf.pdf">
+                  href="https://glints.com/api/s3/download?label=resume&key=989c1d37711cbd553607ca8242751977.pdf">
                   Resume
                 </a>
               </li>
@@ -144,7 +144,7 @@ export default function Home() {
             Graduated Bachelor of Computer Science from <strong>BINUS University. </strong>
             Already worked on several web application projects and 
             has prior experience in teaching computer programming, 
-            currently advancing on <span class="text-blue-600 font-bold">Node.js</span> and <span class="text-blue-600 font-bold">React.js</span>.
+            currently advancing on <span class="text-blue-600 font-bold">Django</span> and <span class="text-blue-600 font-bold">Node.js</span>.
             </p>
             
           </div>
@@ -205,7 +205,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* PHP */}
+              {/* PHP
               <div className="box-border border-1 m-2 mx-4">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
@@ -215,7 +215,7 @@ export default function Home() {
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
-              </div>
+              </div> */}
 
               {/* PYTHON */}
               <div className="box-border border-1 m-2 mx-4">
@@ -229,7 +229,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* JAVA */}
+              {/* JAVA
               <div className="box-border border-1 m-2 mx-4">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Java</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
@@ -239,7 +239,7 @@ export default function Home() {
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-15" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
 
@@ -294,7 +294,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* LARAVEL */}
+              {/* LARAVEL
               <div className="box-border border-1 m-2 mx-4">
                 <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Laravel</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
@@ -304,7 +304,7 @@ export default function Home() {
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
-              </div>
+              </div> */}
 
               {/* TAILWIND */}
               <div className="box-border border-1 m-2 mx-4">
@@ -347,11 +347,11 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* SQL */}
+              {/* POSTGRESQL */}
               <div className="box-border border-1 m-2 mx-4">
-                <h3 className="text-lg dark:text-white font-semibold text-center mb-3">SQL</h3>
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-3">PostgreSQL</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
-                  <Image src={sql} width={100} height={100} alt="sql-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <Image src={postgresql} width={100} height={100} alt="sql-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★50 I have intermediate skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
