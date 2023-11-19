@@ -105,8 +105,8 @@ export default function Project2() {
                     MyXP
                     <div className="flex justify-end">
 
-                      <Image src={disconnected} alt="disconnected-icon" width={35} height={35}/>
-                      <span className="text-red-500 m-2 mt-1 text-xl deployment">Offline</span>
+                      <Image src={connected} alt="disconnected-icon" width={35} height={35}/>
+                      <span className="text-green-500 m-2 mt-1 text-xl deployment">Online</span>
 
                     </div>
                   </Typography>
