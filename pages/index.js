@@ -161,7 +161,7 @@ export default function Home() {
             </p>
 
             <p id="initiator" className="font-bold py-2 leading-8 text-blue-600 dark:text-blue-600 mt-3 text-center">
-              Hover or click the icon to see further details.
+              Hover or select any icon to see further details.
             </p>
 
             {/* FLEX BOX PROGRAMMING LANGUAGES */}
