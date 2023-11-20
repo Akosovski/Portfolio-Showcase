@@ -34,9 +34,8 @@ import python from "../pages/assets/python.svg";
 import node from "../pages/assets/node.svg";
 import react from "../pages/assets/react.svg";
 import postgresql from "../pages/assets/postgresql.svg";
-import php from "../pages/assets/php.svg";
-import java from "../pages/assets/java.svg"
-import laravel from "../pages/assets/laravel.svg";
+import typescript from "../pages/assets/typescript.svg";
+import nest from "../pages/assets/nestjs.svg"
 import django from "../pages/assets/django.svg";
 import tailwind from "../pages/assets/tailwind.svg";
 import mongodb from "../pages/assets/mongodb.svg";
@@ -205,17 +204,17 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* PHP
+              {/* Typescript */}
               <div className="box-border border-1 m-2 mx-4">
-                <h3 className="text-lg dark:text-white font-semibold text-center mb-2">PHP</h3>
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Typescript</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
-                  <Image src={php} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <Image src={typescript} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
                   <div id="progress-bar-12" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
-              </div> */}
+              </div> 
 
               {/* PYTHON */}
               <div className="box-border border-1 m-2 mx-4">
@@ -228,18 +227,6 @@ export default function Home() {
                   <div id="progress-bar-4" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
               </div>
-
-              {/* JAVA
-              <div className="box-border border-1 m-2 mx-4">
-                <h3 className="text-lg dark:text-white font-semibold text-center mb-2">Java</h3>
-                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
-                  <Image src={java} width={100} height={87} alt="py-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have basic skill in this language</span>
-                </a>
-                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
-                  <div id="progress-bar-15" class="bg-blue-600 h-2.5 rounded-full"></div>
-                </div>
-              </div> */}
 
             </div>
 
@@ -294,17 +281,17 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* LARAVEL
+              {/* NEST */}
               <div className="box-border border-1 m-2 mx-4">
-                <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Laravel</h3>
+                <h3 className="text-lg dark:text-white font-semibold text-center mb-1">Nest JS</h3>
                 <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">
-                  <Image src={laravel} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <Image src={nest} width={100} height={97} alt="dj-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
                   <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★30 I have intermediate skill in this framework</span>
                 </a>
                 <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
                   <div id="progress-bar-13" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
-              </div> */}
+              </div> 
 
               {/* TAILWIND */}
               <div className="box-border border-1 m-2 mx-4">
