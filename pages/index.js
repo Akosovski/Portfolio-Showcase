@@ -118,7 +118,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer sm:text-xl text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
-                  href="https://glints.com/api/s3/download?label=resume&key=989c1d37711cbd553607ca8242751977.pdf">
+                  href="https://glints.com/api/s3/download?label=resume&key=5dcc421b4765578763a1ad6b0b96aa8d.pdf">
                   Resume
                 </a>
               </li>
@@ -168,16 +168,16 @@ export default function Home() {
             <div className="box-border border-1 flex flex-row flex-wrap justify-center p-2 -m-2 sm:m-2">
               
               {/* HTML5 */}
-                <div className="box-border border-1 m-2 mx-4">
-                  <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
-                  <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">              
-                    <Image src={html5} width={100} height={100} alt="html5-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
-                    <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★80 I have advance skill in this language</span>
-                  </a>
-                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
-                    <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
-                  </div>
+              <div className="box-border border-1 m-2 mx-4">
+                <h3 className="text-lg dark:text-white font-semibold text-center">HTML5</h3>
+                <a class="tooltip cursor-pointer box-border p-2 w-20 h-20 md:h-32 md:w-32 md:p-4">              
+                  <Image src={html5} width={100} height={100} alt="html5-icon" className="transition ease-in-out delay-50 duration-200 hover:brightness-50"/>
+                  <span className="tooltiptext text-white bg-blue-500 dark:text-white font-bold">★80 I have advance skill in this language</span>
+                </a>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-1">
+                  <div id="progress-bar-1" class="bg-blue-600 h-2.5 rounded-full"></div>
                 </div>
+              </div>
              
 
               {/* CSS */}
@@ -396,23 +396,67 @@ export default function Home() {
           </div>
         </section>
 
-        {/* MINI PROJECTS */}
-        {/* <section className="py-10">
+        {/* EXPERIENCES */}
+        <section className="-mt-4">
           <div>
-            <h3 className="font-abel text-xl py-1 dark:text-gray-200 font-bold">Mini Projects</h3>
-            <p id="mini-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
-             
+            <h3 className="font-abel text-xl py-1 dark:text-gray-200 font-bold">Experiences</h3>
+            <p className="xp-desc text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
+            I also have several years of work experience started from the third year of my study dated back in 2021.
+            Since then I&#39;ve been constantly involved in many projects or events related to my position.
             </p>
+
+            {/* KODEKIDDO */}
+            <div className="grid md:grid-cols-4 grid-cols-3 sm:gap-y-5 gap-x-5 mt-4">
+              <div className="flex-initial md:col-span-1 col-span-4 w-100 p-3 pb-3 md:p-3">
+                <h3 className="xp-dets text-blue-600 dark:text-blue-600 font-bold">February 2021 - February 2022</h3>
+                <h3 className="xp-dets text-gray-800 dark:text-gray-200">Coding Instructor Intern</h3>
+                <br></br>
+                <h3 className="xp-dets text-blue-600 dark:text-blue-600 font-bold">March 2022 - December 2022</h3>
+                <h3 className="xp-dets text-gray-800 dark:text-gray-200">Coding Instructor Part-Time</h3>
+              </div>
+              <div className="flex-initial col-span-3 w-100 p-3 pt-2 md:p-3 pr-1 ">
+                <a href="https://kodekiddo.com/"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">KodeKiddo</h3></a>
+                <ul className="list-disc p-2 pr-0">
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">
+                  Teaching students ranging from elementary up to high school, about problem-solving 
+                  and the basic logic of how computer programming languages work through various lessons, 
+                  practices, and projects across many different learning platforms</li>
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">Participated in Kodekiddo events such as ZIP Classes, and Holiday Programs.</li>
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">Teaching students from school intra-curricular activities which collaborate with Kodekiddo.</li>
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">Participated as a coordinator in school intra-curricular activities such as arranging schedules 
+                    with the school and organizing the material being taught.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* CODE.ID */}
+            <div className="grid md:grid-cols-4 grid-cols-3 sm:gap-y-5 gap-x-5 mt-4">
+              <div className="flex-initial md:col-span-1 col-span-4 w-100 p-3 pb-3 md:p-3">
+                <h3 className="xp-dets text-blue-600 dark:text-blue-600 font-bold">May 2023 - November 2022</h3>
+                <h3 className="xp-dets text-gray-800 dark:text-gray-200">Full-Stack Developer</h3>
+              </div>
+              <div className="flex-initial col-span-3 w-100 p-3 pt-2 md:p-3 pr-1 ">
+                <a href="https://www.code.id/"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">Code Indonesia</h3></a>
+                <ul className="list-disc p-2 pr-0">
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">
+                  Participated in training to develop back-end application and API with Nest.js framework in TypeScript.</li>
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">
+                  Participated in training to develop front-end application with Next.js framework in JavaScript.</li>
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">
+                  Participated in the front-end and back-end development of client applications which were then 
+                  divided into several modules where each module will later be merged into one application.</li>
+                  <li className="xp-dets text-gray-800 font-medium dark:text-gray-200 text-justify">
+                  Participated in training to develop a database based on Entity Relationship Diagram with PostgreSQL 
+                  through pgAdmin which will be used to store data for the application.</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
-
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-
-          </div>
-
-        </section> */}
+        </section>
 
         {/* CERTIFICATIONS */}
-        <section className="py-10 pt-5">
+        <section className="py-10 pt-8">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-white font-bold">Certifications</h3>
             <p id="port-desc" className="text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -421,7 +465,7 @@ export default function Home() {
             Below is the list of certificates I received after completing the courses.
             </p>
             <p id="initiator" className="font-bold py-2 leading-8 text-blue-600 dark:text-blue-600 mt-1 mb-5 text-center">
-              Click one from the list to see further details.
+              Select one from the list to see further details.
             </p>
 
             <div>
