@@ -20,7 +20,6 @@ import { Paper, Button } from '@mui/material';
 // Components
 import Project1 from "./components/project_1";
 import Project2 from "./components/project_2";
-import MiniProject1 from "./components/miniproject_1";
 
 // PNG
 import akhta from "../pages/assets/akhta-profile.png";
