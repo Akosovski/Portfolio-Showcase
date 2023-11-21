@@ -76,6 +76,9 @@ a {
     font-size: 1.35rem;
     margin-top: 1.6rem;
   }
+  .xp-desc, .xp-dets, .xp-dets-selecto{
+    font-size: 1.1rem;
+  }
 }
 
 @keyframes slideOutFromTop {
