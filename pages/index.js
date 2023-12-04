@@ -113,7 +113,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer sm:text-xl text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
-                  href="https://glints.com/api/s3/download?label=resume&key=5dcc421b4765578763a1ad6b0b96aa8d.pdf">
+                  href="https://glints.com/api/s3/download?label=resume&key=ecb84a5436b8491cc993095403f5e75a.pdf">
                   Resume
                 </a>
               </li>
@@ -395,10 +395,12 @@ export default function Home() {
         <section className="-mt-4">
           <div>
             <h3 className="font-abel text-xl py-1 dark:text-gray-200 font-bold">Experiences</h3>
-            <p className="xp-desc text-justify py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="xp-desc text-justify py-2 leading-8 text-gray-800 dark:text-gray-200 mb-5">
             I also have several years of work experience started from the third year of my study dated back in 2021.
             Since then I&#39;ve been constantly involved in many projects or events related to my position.
             </p>
+
+            <hr className="border-1 border-gray-400"></hr>
 
             {/* KODEKIDDO */}
             <div className="grid md:grid-cols-4 grid-cols-3 sm:gap-y-5 gap-x-5 mt-4">
@@ -424,10 +426,12 @@ export default function Home() {
               </div>
             </div>
 
+            <hr className="border-1 border-gray-400"></hr>
+
             {/* CODE.ID */}
             <div className="grid md:grid-cols-4 grid-cols-3 sm:gap-y-5 gap-x-5 mt-4">
               <div className="flex-initial md:col-span-1 col-span-4 w-100 p-3 pb-3 md:p-3">
-                <h3 className="xp-dets text-blue-600 dark:text-blue-600 font-bold">May 2023 - November 2022</h3>
+                <h3 className="xp-dets text-blue-600 dark:text-blue-600 font-bold">May 2023 - November 2023</h3>
                 <h3 className="xp-dets text-gray-800 dark:text-gray-200">Full-Stack Developer</h3>
               </div>
               <div className="flex-initial col-span-3 w-100 p-3 pt-2 md:p-3 pr-1 ">
@@ -443,6 +447,29 @@ export default function Home() {
                   <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
                   Participated in training to develop a database based on Entity Relationship Diagram with PostgreSQL 
                   through pgAdmin which will be used to store data for the application.</li>
+                </ul>
+              </div>
+            </div>
+
+            <hr className="border-1 border-gray-400"></hr>
+
+            {/* CODING LAB */}
+            <div className="grid md:grid-cols-4 grid-cols-3 sm:gap-y-5 gap-x-5 mt-4">
+              <div className="flex-initial md:col-span-1 col-span-4 w-100 p-3 pb-3 md:p-3">
+                <h3 className="xp-dets text-blue-600 dark:text-blue-600 font-bold">December 2023 - Present</h3>
+                <h3 className="xp-dets text-gray-800 dark:text-gray-200">Coding Educator</h3>
+              </div>
+              <div className="flex-initial col-span-3 w-100 p-3 pt-2 md:p-3 pr-1 ">
+                <a href="https://www.codinglab.com.sg"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">Coding Lab</h3></a>
+                <ul className="list-disc p-2 pr-0">
+                  <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
+                  Inspiring and teaching coding to students.</li>
+                  <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
+                  Participate and assist in the further development of the curriculum.</li>
+                  <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
+                  Participate and assist in logistical support for key classes and events.</li>
+                  <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
+                  Performing the necessary administrative and operational work to effectively run the classes.</li>
                 </ul>
               </div>
             </div>
