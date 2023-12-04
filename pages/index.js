@@ -113,7 +113,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer sm:text-xl text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
-                  href="https://glints.com/api/s3/download?label=resume&key=ecb84a5436b8491cc993095403f5e75a.pdf">
+                  href="https://glints.com/api/s3/download?label=resume&key=c58cd1061b783f7974e9ac765236ca37.pdf">
                   Resume
                 </a>
               </li>
