@@ -412,7 +412,7 @@ export default function Home() {
                 <h3 className="xp-dets text-gray-800 dark:text-gray-200">Coding Instructor Part-Time</h3>
               </div>
               <div className="flex-initial col-span-3 w-100 p-3 pt-2 md:p-3 pr-1 ">
-                <a href="https://kodekiddo.com/"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">KodeKiddo</h3></a>
+                <a href="https://kodekiddo.com/" target="_blank" rel="noreferrer"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">KodeKiddo</h3></a>
                 <ul className="list-disc p-2 pr-0">
                   <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
                   Teaching students ranging from elementary up to high school, about problem-solving 
@@ -435,7 +435,7 @@ export default function Home() {
                 <h3 className="xp-dets text-gray-800 dark:text-gray-200">Full-Stack Developer</h3>
               </div>
               <div className="flex-initial col-span-3 w-100 p-3 pt-2 md:p-3 pr-1 ">
-                <a href="https://www.code.id/"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">Code Indonesia</h3></a>
+                <a href="https://www.code.id/" target="_blank" rel="noreferrer"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">Code Indonesia</h3></a>
                 <ul className="list-disc p-2 pr-0">
                   <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
                   Participated in training to develop back-end application and API with Nest.js framework in TypeScript.</li>
@@ -460,7 +460,7 @@ export default function Home() {
                 <h3 className="xp-dets text-gray-800 dark:text-gray-200">Coding Educator</h3>
               </div>
               <div className="flex-initial col-span-3 w-100 p-3 pt-2 md:p-3 pr-1 ">
-                <a href="https://www.codinglab.com.sg"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">Coding Lab</h3></a>
+                <a href="https://www.codinglab.com.sg" target="_blank" rel="noreferrer"><h3 className="xp-dets-selector text-gray-800 font-bold dark:text-gray-200">Coding Lab</h3></a>
                 <ul className="list-disc p-2 pr-0">
                   <li className="xp-dets text-gray-800 dark:text-gray-200 text-justify">
                   Inspiring and teaching coding to students.</li>
