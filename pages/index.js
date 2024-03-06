@@ -63,36 +63,6 @@ function Item(props)
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
-  /* Project Card 1 - UMKMBookeeping */
-  const [open1, setOpen1] = React.useState(false);
-  const handleOpen1 = () => setOpen1(true);
-  const handleClose1 = () => setOpen1(false);
-
-  /* Project Card 2 - MyXP */
-  const [open2, setOpen2] = React.useState(false);
-  const handleOpen2 = () => setOpen2(true);
-  const handleClose2 = () => setOpen2(false);
-
-  const modal_style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    minWidth: 350,
-    boxShadow: 24,
-    p: 4,
-  };
-
-  const items = [
-    {
-      imageURL: "https://cdn.discordapp.com/attachments/995173807750926346/1025696759550320690/Pembukuan_Owner.png"
-    },
-    {
-      imageURL: "https://cdn.discordapp.com/attachments/995173807750926346/1025696759550320690/Pembukuan_Owner.png"
-    }
-  ]
-
-
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -113,7 +83,7 @@ export default function Home() {
               </li>
               <li>
                 <a className="transition ease-in-out delay-50 duration-200 px-4 py-2 border-none rounded-md ml-8 cursor-pointer sm:text-xl text-xxl text-white bg-blue-600 hover:bg-blue-700 hover:drop-shadow-xl active:bg-teal-800"
-                  href="https://glints.com/api/s3/download?label=resume&key=c58cd1061b783f7974e9ac765236ca37.pdf">
+                  href="https://storage.googleapis.com/universal_static/Akosovski-Portfolio/CV%20Updated.pdf">
                   Resume
                 </a>
               </li>
@@ -597,7 +567,7 @@ export default function Home() {
           </a>
         </div>
         <div className="font-abel text-center pt-2 text-gray-800 dark:text-white text-md pb-8 mt-3">
-          © 2023 <span className="font-semibold">Akosovski</span>. All rights reserved.
+          © 2024 <span className="font-semibold">Akosovski</span>. All rights reserved.
         </div>
       </footer>
     </div>
