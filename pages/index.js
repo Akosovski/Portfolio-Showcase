@@ -108,7 +108,7 @@ export default function Home() {
             Graduated Bachelor of Computer Science from <strong>BINUS University. </strong>
             Already worked on several web application projects and 
             has prior experience in teaching computer programming, 
-            currently advancing on <span class="text-blue-600 font-bold">Django</span> and <span class="text-blue-600 font-bold">Node.js</span>.
+            currently advancing on <span class="text-blue-600 font-bold">Django</span> and <span class="text-blue-600 font-bold">Next.js</span>.
             </p>
             
           </div>
